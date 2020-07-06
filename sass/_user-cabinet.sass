@@ -1,0 +1,379 @@
+.user-cabinet-nav-orders-wrapper
+    display: flex
+    margin: 50px auto
+.user-cabinet-nav-block
+    flex-basis: 220px
+    height: 300px
+    height: max-content    
+    margin-right: 2vw
+    border: 1px solid $color_lPink
+    border-radius: 5px
+    padding: 30px 5px
+    .user-cabinet-heading
+        padding: 0 18px
+        margin-bottom: 40px
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px      
+        letter-spacing: 0.38px
+        white-space: nowrap
+
+.person-cabinet__options.user-cabinet
+    padding: 0
+    .person-cabinet__option
+        .person-cabinet__img-wrapper
+            left: 20px
+        .person-cabinet__option-link
+            padding: 10px 0 10px 45px    
+        &:hover:not(.person-cabinet__option_active)
+            .person-cabinet__img-wrapper
+                .person-cabinet__img     
+                    fill: $color_olive
+            .person-cabinet__option-link
+                color: $color_olive                  
+            
+                    
+.person-cabinet__option_active     
+    .person-cabinet__img-wrapper
+        .person-cabinet__img     
+            fill: $color_green         
+    .person-cabinet__option-link
+        color: $color_green
+        font-weight: 400
+
+.user-cabinet-main-block
+    flex-basis: 100%
+    border: 1px solid $color_lPink
+    border-radius: 5px
+    padding: 0 30px
+    .account-main-block-header
+        text-align: left
+.user-cabinet
+    .user-logout
+        border: none
+
+.user-order-unit
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 15px
+    background-color: #f6f6f6
+    border-radius: 5px
+    margin-bottom: 15px
+    .order-info-container
+        display: flex
+        align-items: center
+    .order-status
+        flex-basis: 40%
+    &:last-of-type
+        margin-bottom: 0px
+
+.no-order-plug
+    display: none
+    font-weight: 300
+    font-size: 12px
+    line-height: 1.17
+    letter-spacing: 0.28px
+.order-pic-wrapper
+    width: 60px
+    height: 60px
+    border-radius: 5px
+    display: flex
+    align-items: center
+    margin-right: 2vw
+    .order-pic        
+        width: 100%
+        object-fit: cover
+
+.order-info-wrapper
+    font-size: 12px
+    line-height: 1.17
+    letter-spacing: 0.55px
+    color: $color_olive
+    .order-title
+        font-weight: 400        
+        padding-bottom: 10px
+    .order-product-info
+        font-weight: 300
+        padding-bottom: 10px
+    .order-price
+        font-weight: 300
+        .order-weight
+            opacity: 0.5
+            margin-left: 30px
+
+.order-status
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.73px
+    color: $color_olive
+    white-space: nowrap
+.resume-purchase-btn-wrapper
+    display: flex
+    .account-resume-purchase-btn
+        width: 112px        
+        width: max-content    
+        font-weight: bold
+        font-size: 10px
+        line-height: 1.2
+        letter-spacing: 0.45px
+        text-transform: uppercase
+        color: #FFFFFF
+        background-color: $color_green
+        padding: 12px 20px
+        border-radius: 18px
+        white-space: nowrap
+        cursor: pointer
+        margin: 30px 30px 30px 0
+        &:hover
+            background-color: $color_green-hover
+    
+//адреса
+.address-main-block
+.user-address-wrapper
+    display: flex
+    flex-wrap: wrap    
+    justify-content: space-between
+    .user-address-unit
+        max-width: 305px
+        flex-basis: 305px
+        margin-right: auto
+        margin-bottom: 2vw
+
+.user-address-unit
+    background-color: #f6f6f6
+    padding: 15px
+    border-radius: 5px
+    .user-address__street, .user-address__city
+        margin-bottom: 5px
+        color: $color_olive
+        font-size: 15px
+        line-height: 18px
+        letter-spacing: 0.285714px
+.user-address__appartment
+    display: inline-block
+
+.address-control-block
+    display: flex
+    margin-top: 10px
+    .user__edit-address-wrapper
+        flex-basis: 125px
+.control-address__link
+    font-size: 15px
+    line-height: 18px
+    letter-spacing: 0.285714px
+    text-decoration-line: underline
+    color: $color_green
+    opacity: 0.7
+.account-add-address-btn
+    width: 112px        
+    width: max-content    
+    font-weight: bold
+    font-size: 10px
+    line-height: 1.2
+    letter-spacing: 0.45px
+    text-transform: uppercase
+    color: #FFFFFF
+    background-color: $color_green
+    padding: 12px 20px
+    border-radius: 18px
+    white-space: nowrap
+    cursor: pointer
+    margin: 0 auto 30px 0
+    &:hover
+        background-color: $color_green-hover
+
+.add-address-popup-container
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 3   
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.3)    
+.add-address-popup-container_active
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+.add-address-popup-window
+    width: 400px
+    border-radius: 5px
+    background-color: #fff
+    cursor: default
+ 
+.add-address-sub-block  
+    margin-bottom: 15px
+    input
+        margin-bottom: 10px
+    textarea    
+        padding-top: 15px
+        height: 70px
+.add-address-popup-form
+    padding: 0 30px
+
+.address-inputs-wrapper
+    display: flex
+    justify-content: space-between
+    .address-form-input-wrapper
+        flex-basis: 49%
+    .address-form-checkbox-wrapper
+        label
+            font-weight: 300
+            font-size: 12px
+            line-height: 22px
+            letter-spacing: 0.285714px
+            color: $color_olive
+            cursor: pointer
+            &::before
+                margin-top: -2px
+
+.add-addres-send-btn
+    background-color: $color_green
+    color: #fff
+    margin-bottom: 30px
+    &:hover
+        background-color: $color_olive
+
+//сторінка налаштувань
+.user-settings-form-wrapper
+    display: flex
+
+.user-settings-form
+    padding-right: 50px
+    flex-basis: 390px
+
+.user-settings-form-title
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.380952px
+    color: $color_olive
+    margin-bottom: 10px
+
+.user__form-sub-block
+    margin-bottom: 30px
+.user__tel-numbers-container, .user__login-password-container
+    margin-bottom: 15px
+
+.user-settings-form
+    label
+        font-weight: 300
+        font-size: 12px
+        line-height: 2.7
+        letter-spacing: 0.285714px
+        color: $color_olive
+        opacity: 0.5
+        
+.user-input-tel-wrapper
+    position: relative       
+    [type="tel"]
+        padding-left: 50px 
+    &::before
+        content: ""
+        display: block
+        width: 40px
+        height: 38px
+        border-right: 1px solid $color_lPink
+        position: absolute            
+        top: 1px
+        left: 0        
+        background-image: url('../img/ua-flag.png')
+        background-repeat: no-repeat
+        background-position: 11px 15px
+[name="login-password"]
+    background-color: #f8f8f8
+.input__edit-link
+    position: absolute
+    top: 15px
+    right: -63px
+    font-size: 12px
+    letter-spacing: 0.285714px
+    color: $color_green
+    &:hover
+        text-decoration: underline
+.add-tel-link-wrapper
+    margin-top: 15px
+    .add-tel-link
+        font-size: 12px
+        letter-spacing: 0.285714px
+        color: $color_green
+
+.user-birthday-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 15px
+
+
+.submit-btn
+    border-radius: 5px
+    text-transform: uppercase
+    border: none
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.636364px
+    width: 100%
+    height: 50px
+        
+.user-personal-data-send-btn
+    background-color: #E6ECEC
+    color: $color_olive
+    margin-bottom: 30px
+    &:hover
+        background-color: $color_green
+        color: #fff
+
+//заміна товару
+.user-product-replacement-header
+    font-weight: normal
+    font-size: 15px
+    line-height: 18px
+    letter-spacing: 0.681818px
+    color: $color_olive
+    text-transform: none
+    &::before
+        content: ""
+        display: inline-block
+        width: 13px
+        height: 14px
+        background-image: url('../img/exchange.png')
+        background-repeat: no-repeat
+        margin-right: 15px
+        margin-bottom: -2px
+.user-product-replacement-block
+    flex-basis: 700px
+.user-product-replacement-form
+.user-product-replacement-form-title
+    margin-bottom: 15px
+.user-radio-btn-block
+    .radio-btn-wrapper
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0
+        label
+            font-weight: 300
+            font-size: 12px
+            line-height: 22px
+            letter-spacing: 0.285714px
+            color: $color_olive
+            &::before
+                margin-top: -3px
+            &:hover
+                cursor: pointer
+                color: $color_green
+[name="user-product-replacement-comment"]
+    display: block
+    padding-top: 15px
+    height: 70px
+    width: 100%
+.user__product-replacement-btn-wrapper
+    width: 160px
+    margin: 30px 0
+    .product-replacement-send-btn        
+        padding-top: 3px
+        background-color: $color_green
+        color: #fff
+        &:hover
+            background-color: $color_green-hover

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./chunks/head.html', {"title": "Каталог товарів"})
+
+<body>
+    @@include('./chunks/header.html')
+    <main class="center-main-container">
+        <div class="breadcrumbs-block">
+            <ul class="breadcrumbs-wrapper">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+                    <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__current">Каталог товарів</span>
+                </li>
+            </ul>
+        </div>
+        <h3 class="page-section-header">каталог товарів</h3>
+        <div class="filters-products-wrapper">
+            <div class="mobile-quick-sort-filter-wrapper">
+                <div class="mobile-quick-sort-block">
+                    <form action="">
+                        <select name="" id="mobile-quick-sort">
+                            <option class="price-sort-cheap" value="price_low">За зростанням ціни</option>
+                            <option class="price-sort-expensive" value="price_high">За спаданням ціни</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="applied-filters-title-wrapper mobile-show-filters-btn">
+                    <p class="applied-filters-title">Фільтр</p>
+                    <p class="mobile-filtered-products-count__number filtered-products-count__number">(0)</p>
+                </div>
+            </div>
+            <section class="product-filters-block">
+                <div class="category-filter-wrapper">
+                    <div class="active-category filter-dropdown_trigger">
+                        <div class="filter-ico-title-wrapper">
+                            <div class="category-pic"><img src="img/category-ico/milk.png" alt=""></div>
+                            <span class="current-category">Чай, кава, цукор</span>
+                        </div>
+                        <div class="chose-category-filter-state-ico"></div>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <ul class="category-option-container">
+                            <li class="category-option__unit"><a href="">Риба, ікра, морепродукти</a></li>
+                            <li class="category-option__unit"><a href="">Молоко, сир, яйца</a></li>
+                            <li class="category-option__unit"><a href="">Птахи, м'ясо, делікатеси</a></li>
+                            <li class="category-option__unit"><a href="">Вода, соки, напої</a></li>
+                            <li class="category-option__unit"><a href="">Чай, кава, цукор</a></li>
+                            <li class="category-option__unit"><a href="">Соуси, горіхи, консерви</a></li>
+                            <li class="category-option__unit"><a href="">Хліб, солодощі, снеки</a></li>
+                            <li class="category-option__unit"><a href="">Макарони, крупи, спеції</a></li>
+                            <li class="category-option__unit"><a href="">Заморожені продукти</a></li>
+                            <li class="category-option__unit"><a href="">Овочі, фрукти, гриби, ягоди</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="applied-filters-block">
+                    <p class="applied-filters-title applied-filters-header">Фільтр</p>
+                    <div class="applied-filter-unit-wrapper">
+                        <div class="applied-filter-unit">
+                            <span class="applied-filter__title">Скинути всі фільтри</span>
+                            <img class="applied-filter__close-btn" src="img/close.png" alt="">
+                        </div>
+                        <div class="applied-filter-unit">
+                            <span class="applied-filter__title">Ahmad</span>
+                            <img class="applied-filter__close-btn" src="img/close.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <form class="product-filters" action=""></form>
+                <div class="price-range-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Ціна</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container filters-dropdown-container_open">
+                        <div class="price-range-field-wrapper ">
+                            <label for=""><input class="price-range-field price-field__min" type="text"
+                                    value="20.0"></label>
+                            <p class="price-range-field__spacer"></p>
+                            <label for=""><input class="price-range-field price-field__max" type="text"
+                                    value="60.0"></label>
+                            <button type="button" class="filter-price-btn" value="filter-price-btn">ok</button>
+                        </div>
+                        <div class="filter-range-slider" id="price-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="brands-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Торгова марка</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container filters-dropdown-container_open">
+                        <ul class="brands-option-container ">
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Ahmad" type="checkbox" value="brand-Ahmad">
+                                <label class="filter-checkbox-label" for="brand-Ahmad">Ahmad</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input id="brand-Riston" name="product-brand" type="checkbox" value="brand-Ahmad">
+                                <label class="filter-checkbox-label"  for="brand-Riston">Riston</label>
+                                <span class="filter-checkbox-quantity">(4)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Greenfield" type="checkbox" value="brand-Greenfield">
+                                    <label class="filter-checkbox-label"
+                                    for="brand-Greenfield">Greenfield</label><span
+                                    class="filter-checkbox-quantity">(3)</span></li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Tess" type="checkbox" value="brand-Tess">
+                                <label class="filter-checkbox-label"  for="brand-Tess">Tess</label>
+                                <span class="filter-checkbox-quantity">(1)</span></li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Bernley" type="checkbox" value="brand-Bernley">
+                                    <label class="filter-checkbox-label" for="brand-Bernley">Bernley</label>
+                                    <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Maitre de The" type="checkbox" value="brand-Maitre de The">
+                                    <label class="filter-checkbox-label" for="brand-Maitre de The">Maitre de The</label>
+                                    <span class="filter-checkbox-quantity">(4)</span></li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Curtis" type="checkbox" value="brand-Curtis">
+                                <label class="filter-checkbox-label"  for="brand-Curtis">Curtis</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Akbar"  type="checkbox" value="brand-Akbar">
+                                <label class="filter-checkbox-label" for="brand-Akbar">Akbar</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-brand" id="brand-Gordon" type="checkbox" value="brand-Gordon">
+                                <label class="filter-checkbox-label" for="brand-Gordon">Gordon</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-type-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Вид</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <ul class="product-type-option-container ">
+                            <li class="filter-checkbox-item">
+                                <input name="product-type" id="type-sassage" type="checkbox" value="type-sassage">
+                                <label class="filter-checkbox-label"  for="type-sassage">Ковбаси</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-type" id="type-sausage"  type="checkbox" value="type-sausage">
+                                <label class="filter-checkbox-label"  for="type-sausage">Сардельки</label>
+                                <span class="filter-checkbox-quantity">(4)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-purpose-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Призначення</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <ul class="product-type-option-container">
+                            <li class="filter-checkbox-item">
+                                <input name="product-purpose" id="for-diabetics"  type="checkbox" value="for-diabetics">
+                                <label class="filter-checkbox-label" for="for-diabetics">для діабетиків</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-purpose" id="for-vegans" type="checkbox" value="for-vegans">
+                                <label class="filter-checkbox-label" for="for-vegans">для вегетаріанців</label>
+                                <span class="filter-checkbox-quantity">(4)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-speciality-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Особливості</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <ul class="product-type-option-container ">
+                            <li class="filter-checkbox-item">
+                                <input name="product-speciality" id="gluten-free" type="checkbox" value="gluten-free">
+                                <label class="filter-checkbox-label" for="gluten-free">без глютенові</label>
+                                <span class="filter-checkbox-quantity">(1)</span>
+                            </li>
+                            <li class="filter-checkbox-item">
+                                <input name="product-speciality" id="organic" type="checkbox" value="organic">
+                                <label class="filter-checkbox-label" for="organic">органічні</label>
+                                <span class="filter-checkbox-quantity">(4)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weight-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Вага</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <div class="filter-range-display-wrapper">
+                            <p class="filter-range-display filter-range-display__min">0.2 кг</p>
+                            <p class="filter-range-display__spacer"></p>
+                            <p class="filter-range-display filter-range-display__max">0.7 кг</p>
+                        </div>
+                        <div class="filter-range-slider" id="weight-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="fats-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Жири</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <div class="filter-range-display-wrapper ">
+                            <p class="filter-range-display filter-range-display__min"></p>
+                            <p class="filter-range-display__spacer"></p>
+                            <p class="filter-range-display filter-range-display__max"></p>
+                        </div>
+                        <div class="filter-range-slider" id="fats-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="proteins-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Білки</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <div class="filter-range-display-wrapper">
+                            <p class="filter-range-display filter-range-display__min">0</p>
+                            <p class="filter-range-display__spacer"></p>
+                            <p class="filter-range-display filter-range-display__max">0</p>
+                        </div>
+                        <div class="filter-range-slider" id="proteins-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="carbons-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Вуглеводи</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <div class="filter-range-display-wrapper ">
+                            <p class="filter-range-display filter-range-display__min">0</p>
+                            <p class="filter-range-display__spacer"></p>
+                            <p class="filter-range-display filter-range-display__max">0</p>
+                        </div>
+                        <div class="filter-range-slider" id="carbons-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="calories-filter-block ">
+                    <div class="filter-title-wrapper filter-dropdown_trigger">
+                        <p class="filter-title">Калорії</p>
+                        <p class="chose-category-filter-state-ico"></p>
+                    </div>
+                    <div class="filters-dropdown-container">
+                        <div class="filter-range-display-wrapper ">
+                            <p class="filter-range-display filter-range-display__min">від</p>
+                            <p class="filter-range-display__spacer"></p>
+                            <p class="filter-range-display filter-range-display__max">до</p>
+                        </div>
+                        <div class="filter-range-slider" id="calories-range-slider">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons-block">
+                    <button class="filter-form-btn" type="submit">показати</button>
+                    <button class="filter-form-btn" type="reset">скинути</button>
+                </div>
+                </form>
+            </section>
+            <section class="filtered-products-block">
+                <header class="filtered-products-top-block">
+                    <div class="products-quick-sort-filter-block">
+                        <form action="">
+                            <select name="" id="desktop-quick-sort">
+                                <option class="price-sort-cheap" value="price_low">За зростанням ціни</option>
+                                <option class="price-sort-expensive" value="price_high">За спаданням ціни</option>
+                            </select>
+                        </form>
+                    </div>
+                    <p class="filtered-products-count">Товарів: <span class="filtered-products-count__number">12</span>
+                    </p>
+                </header>
+                <div class="filtered-products-wrapper">
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <a href="/product-unit.html"><img src="img/goods/5.png" alt=""></a>
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title"><a href="/product-unit.html">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span></a>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="goods__item">
+                        <div class="goods-labels-wrapper">
+                            <div class="goods-discount-label-wrapper show-discount-label">
+                                <p class="discount-label-value">-11%</p>
+                            </div>
+                            <div class="goods-new-label-wrapper show-new-label">
+                                <p class="new-label-value">new</p>
+                            </div>
+                        </div>
+                        <div class="goods-img-block">
+                            <img src="img/goods/1.png" alt="">
+                        </div>
+                        <div class="goods-info-block">
+                            <div class="goods-title-wrapper">
+                                <p class="goods-title">Макарони Мак-Вар здоров'я №1<span
+                                        class="goods-weight">400г</span>
+                                </p>
+                            </div>
+                            <div class="goods-purchase-wrapper">
+                                <div class="price-block">
+                                    <p class="old-price"><strike>15.20</strike></p>
+                                    <p class="current-price">11.20</p>
+                                    <p class="price-text"><strike>грн</strike></p>
+                                </div>
+                                <div class="goods-quantity">
+                                    <p class="goods-quantity__remove-btn">-</p>
+                                    <p class="goods-quantity__selected-qty">11</p>
+                                    <p class="goods-quantity__add-btn">+</p>
+                                </div>
+                                <div class="goods-basket-block">
+                                    <div class="goods-basket-wrapper">
+                                        <p class="goods-basket__btn">у кошик</p>
+                                        <div class="goods-basket__ico">
+                                            <img src="img/goods-basket.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="favorite-goods-wrapper">
+                                        <svg class="favorite-goods__ico favorite-goods__ico_selected">
+                                            <path
+                                                d="M19.9669417,5.36742166 C19.6750002,2.25702761 17.4006255,0.000372323922 14.5542915,0.000372323922 C12.6580177,0.000372323922 10.921754,0.988147688 9.94476905,2.571269 C8.97663086,0.967669873 7.31152549,0 5.44563818,0 C2.59968886,0 0.324929521,2.25665529 0.0333726089,5.36704933 C0.0102942254,5.50443686 -0.0843271471,6.22748992 0.203383367,7.40663978 C0.618024991,9.10741545 1.57577791,10.6544213 2.97240475,11.879367 L9.94015337,18 L17.027525,11.8797394 C18.4241518,10.6544213 19.3819047,9.10778778 19.7965463,7.40663978 C20.0842568,6.22786224 19.9896355,5.50480918 19.9669417,5.36742166 Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                @@include('./chunks/pagination.html')
+            </section>
+        </div>
+    </main>
+    @@include('./chunks/footer.html')
+    <script src="js/libs.min.js"></script>    
+    <script src="js/common.js"></script>
+</body>
+
+</html>

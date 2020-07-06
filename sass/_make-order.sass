@@ -1,0 +1,161 @@
+.make-order-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text        
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.545455px
+        opacity: 0.5
+        color: $color_olive
+.make-order-header-wrapper
+    padding: 10px
+    border-bottom: 1px solid $color_lPink
+.make-order-title
+    text-align: left
+
+.make-order-main-wrapper
+    display: flex
+    justify-content: space-between
+    .make-order-forms-block
+        flex-basis: 65%
+    .make-order-final-block
+        flex-basis: 30%
+
+.order-label
+    font-weight: 300
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 0.285714px
+    color: $color_olive
+    opacity: 0.5
+.order-input-wrapper
+    margin: 5px 0 15px 0
+
+.order-step-block-wrapper        
+    display: flex
+    padding: 30px
+    border: 1px solid $color_lPink
+    border-radius: 5px
+    margin-bottom: 15px
+.order-step-block
+    &__main-info    
+        flex-basis: 340px        
+    &__delivery
+        flex-basis: 500px 
+    &__payment
+        flex-basis: 400px       
+
+.order-step-block_show
+    .order-step-block__title    
+        opacity: 1
+        &.order-step-block__delivery-ico
+            &::before
+                background-image: url('../img/order-truck_active.png')
+        &.order-step-block__payment-ico
+            &::before
+                background-image: url('../img/order-payment_active.png')
+    .step-input-block
+        display: block
+    .order-step-btn
+        display: flex        
+    .order-main-info-btn, .order-delivery-btn, .order-payment-btn   
+        background-color: $color_green
+        color: #FFFFFF
+        opacity: 1    
+        cursor: pointer    
+   
+
+.order-step-block__title    
+    font-size: 15px
+    line-height: 1
+    letter-spacing: 0.681818px
+    color: $color_olive
+    opacity: 0.5
+
+.order-step-block__delivery-ico
+    &::before
+        content: ""
+        display: inline-block
+        vertical-align: baseline
+        background-image: url('../img/order-truck.png')
+        width: 18px
+        height: 14px
+        margin-right: 10px
+.order-step-block__payment-ico
+    &::before
+        content: ""
+        display: inline-block        
+        vertical-align: baseline
+        background-image: url('../img/order-payment.png')
+        width: 14px
+        height: 14px
+        margin-right: 10px
+
+.order-step-btn    
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #e6ecec
+    color: $color_olive
+    opacity: 0.5
+    width: 160px
+    height: 50px
+    border-radius: 5px    
+    margin-top: 30px    
+    display: none
+    span                     
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 0.636364px
+        text-transform: uppercase        
+
+.step-input-block
+    display: none    
+
+.delivery-radio-wrapper
+    margin: 30px 0
+.order-radio-label
+    cursor: pointer
+    font-weight: 300
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 0.285714px
+    color: $color_olive
+
+.order-delivery-input-block
+    display: none
+    &_active
+        display: block
+
+.delivery-plug
+    display: none
+    background-color: #f6f6f6
+    padding: 10px
+    p
+        font-weight: 300
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.285714px
+        color: $color_olive
+        opacity: 0.5
+    &__ico
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-basis: 17px
+        min-width: 17px
+        margin: 0 10px 0 5px
+        height: 17px
+        border: 1px solid $color_lPink
+        border-radius: 50%
+        line-height: 1
+        background-color: #fff
+    &__text
+
+.empty-delivery__plug
+    display: flex
+    align-items: center
+

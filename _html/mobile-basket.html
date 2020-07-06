@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./chunks/head.html', {"title" : "корзина"})
+    <body>
+        @@include('./chunks/header.html')
+        <div class="mobile-basket-main-wrapper center-main-container">
+            <div class="breadcrumbs-block">
+                <ul class="breadcrumbs-wrapper">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+                        <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__current">корзина</span>
+                    </li>
+                </ul>
+            </div>
+            <section class="mobile-basket-products-container"> 
+                <article class="basket-no-product-plug">
+                    <p>В корзині на даний момент пусто</p>
+                </article>       
+                <article class="basket-product-item">
+                    <div class="product-pic-wrapper"><img src="/img/goods/1.png" alt="" class="product-pic"></div>
+                    <div class="product-basket-units-wrapper">
+                        <div class="product-title-wrapper">
+                            <p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+                            <p class="product-additional-info">
+                                <span class="product-additional__price">23.20 грн</span>
+                                <span class="product-additional__weight">125 г</span>
+                            </p>
+                        </div>
+                        <div class="product-quantity-wrapper">
+                            <div class="goods-quantity">
+                                <p class="goods-quantity__remove-btn">-</p>
+                                <p class="goods-quantity__selected-qty">11</p>
+                                <p class="goods-quantity__add-btn">+</p>
+                            </div>
+                        </div>
+                        <div class="product-price-wrapper">
+                            <div class="price-block">												
+                                <p class="current-price">23.20</p>
+                                <p class="price-text">грн</p>
+                            </div>										
+                        </div>
+                    </div>
+                    <div class="product-close-btn-wrapper">
+                        <div class="close-btn basket-product__close-btn">
+                            <p class="cross-line"></p>
+                            <p class="cross-line"></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="basket-product-item">
+                    <div class="product-pic-wrapper"><img src="/img/goods/2.png" alt="" class="product-pic"></div>
+                    <div class="product-basket-units-wrapper">
+                        <div class="product-title-wrapper">
+                            <p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+                            <p class="product-additional-info">
+                                <span class="product-additional__price">23.20 грн</span>
+                                <span class="product-additional__weight">125 г</span>
+                            </p>
+                        </div>
+                        <div class="product-quantity-wrapper">
+                            <div class="goods-quantity">
+                                <p class="goods-quantity__remove-btn">-</p>
+                                <p class="goods-quantity__selected-qty">11</p>
+                                <p class="goods-quantity__add-btn">+</p>
+                            </div>
+                        </div>
+                        <div class="product-price-wrapper">
+                            <div class="price-block">												
+                                <p class="current-price">23.20</p>
+                                <p class="price-text">грн</p>
+                            </div>										
+                        </div>
+                    </div>
+                    <div class="product-close-btn-wrapper">
+                        <div class="close-btn basket-product__close-btn">
+                            <p class="cross-line"></p>
+                            <p class="cross-line"></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="basket-product-item">
+                    <div class="product-pic-wrapper"><img src="/img/goods/3.png" alt="" class="product-pic"></div>
+                    <div class="product-basket-units-wrapper">
+                        <div class="product-title-wrapper">
+                            <p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+                            <p class="product-additional-info">
+                                <span class="product-additional__price">23.20 грн</span>
+                                <span class="product-additional__weight">125 г</span>
+                            </p>
+                        </div>
+                        <div class="product-quantity-wrapper">
+                            <div class="goods-quantity">
+                                <p class="goods-quantity__remove-btn">-</p>
+                                <p class="goods-quantity__selected-qty">11</p>
+                                <p class="goods-quantity__add-btn">+</p>
+                            </div>
+                        </div>
+                        <div class="product-price-wrapper">
+                            <div class="price-block">												
+                                <p class="current-price">23.20</p>
+                                <p class="price-text">грн</p>
+                            </div>										
+                        </div>
+                    </div>
+                    <div class="product-close-btn-wrapper">
+                        <div class="close-btn basket-product__close-btn">
+                            <p class="cross-line"></p>
+                            <p class="cross-line"></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>        
+        <div class="mobile-basket-control-container center-main-container">
+            <div class="basket-control-btns-wrapper">
+                <p class="basket-remove-all-btn mobile">Очистити корзину</p>
+            </div>        
+            <div class="basket-summary-info-wrapper mobile-basket-weight">
+                <p class="mobile-basket-weight__title">Загальна вага заказа:</p>
+                <p class="basket-summary-weight-wrapper">
+                    <span class="basket-summary__weight">0.4</span>
+                    <span class="basket__weight-measure">кг</span>
+                </p>									
+            </div>
+            <div class="basket-summary-info-wrapper ">                
+                <p class="basket-overall-price__title">Всього:</p>
+                <p class="basket-overall-price-wrapper">
+                    <span class="basket-overall__price">222.20</span>
+                    <span class="basket__price-currency">грн</span>
+                </p>            
+            </div>        
+            <p class="basket-submit-link-wrapper"><a class="submit-btn mobile basket-submit-link" href="/make-order.html">Замовити</a></p>
+        </div>
+        @@include('./chunks/footer.html')
+        <script src="js/libs.min.js"></script>    
+        <script src="js/common.js"></script>
+    </body>
+</html>

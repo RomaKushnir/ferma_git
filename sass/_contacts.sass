@@ -1,0 +1,76 @@
+.contacts__header
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.38px
+    color: $color_olive
+    margin-bottom: 15px
+
+.contacts__content
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.57
+    letter-spacing: 0.33px
+    color: $color_olive
+
+.contacts-form
+    margin-top: 30px
+
+.form__block-title
+    font-size: 18px
+    letter-spacing: 0.43px
+    color: $color_olive
+    width: 100%
+    text-transform: uppercase
+    padding-bottom: 15px
+    border-bottom: 1px solid $color_lPink
+
+.personal-data-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    padding: 20px 0
+
+.required-input-wrapper
+    position: relative
+    &::after
+        content: "\273D"
+        color: $color_red
+        font-size: 6px
+        position: absolute            
+        top: 15px
+        right: 15px
+.personal-data-textarea
+    display: block
+    margin-top: 15px
+    height: 120px
+    padding-top: 15px
+.agree-submit-wrapper
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+    margin-bottom: 50px
+.personal-data-checkbox-wrapper
+    display: flex
+    align-items: center
+#appeal-agreement + label:before
+    font: 16px/1.1em sans-serif
+    height: 20px
+    width: 20px
+    border: 1px solid $color_lPink
+#appeal-agreement:checked + label::before
+    background: #fff
+    color: $color_green
+    content: "\2713"
+    font-weight: bold
+
+.appeal-agreement-label
+    font-size: 14px
+    letter-spacing: 0.33px
+    color: $color_olive
+    cursor: pointer
+.appeal__rules-acceptance    
+    font-size: 14px
+    letter-spacing: 0.33px
+    color: $color_green
+    border-bottom: 1px dashed $color_green

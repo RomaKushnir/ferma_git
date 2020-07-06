@@ -1,0 +1,329 @@
+.filters-products-wrapper
+    display: flex
+    justify-content: space-between
+.product-filters-block
+    flex-basis: 315px
+
+.filters-dropdown-container
+    label
+        &:hover
+            cursor: pointer
+            color: $color_green
+.category-filter-wrapper
+    padding: 10px 0
+    border-bottom: 1px solid $color_lPink
+    margin-bottom: 20px
+.active-category
+    display: flex
+    align-items: center
+    justify-content: space-between
+.filter-dropdown_trigger
+    cursor: pointer
+
+.filters-dropdown-container
+    overflow: hidden
+    opacity: 0
+    height: 0
+    padding: 0
+    transition: 0.2s
+.filters-dropdown-container_open
+    margin-top: 10px
+    margin-bottom: 20px
+    opacity: 1
+    height: auto
+    // background-color: #f6f9f9
+    transition: all ease-out 0.3s
+.category-option-container
+    margin-top: -10px
+    margin-bottom: -10px
+.category-option__unit
+    padding: 10px 10px 10px 20px
+    a
+        font-size: 14px
+        letter-spacing: 0.88px
+        color: #747474
+        // opacity: 0.5
+        &:hover
+            color: $color_green
+            opacity: 1
+
+.filter-ico-title-wrapper
+    display: flex
+    align-items: center
+    .category-pic
+        margin-right: 10px        
+        img 
+            width: 25px
+            height: 25px
+            object-fit: contain
+    .current-category
+        font-size: 14px
+        letter-spacing: 0.88px
+        color: $color_green
+
+.chose-category-filter-state-ico
+    cursor: pointer
+    width: 8px
+    height: 8px
+    margin-right: 25px
+    border-bottom: 1px solid $color_green
+    border-right: 1px solid $color_green
+    content: ''
+    display: block
+    transform-origin: 66% 66%
+    transform: rotate(45deg)
+.chose-category-filter-state-ico_open
+    transform: rotate(-135deg)
+
+.applied-filters-block
+    margin-bottom: 15px
+.mobile-quick-sort-filter-wrapper
+    display: none
+    .mobile-quick-sort-block
+        position: relative
+        select
+            display: none
+
+.mobile-filters-btn
+    cursor: pointer
+.applied-filters-title
+    font-size: 14px
+    font-weight: 500
+    letter-spacing: 0.78px
+    color: $color_filter-text
+    margin-bottom: 10px
+    &::before
+        content: ""
+        display: inline-block
+        background-image: url('../img/filter.png')
+        background-repeat: no-repeat
+        height: 12px
+        width: 11px
+        margin-right: 10px
+.applied-filter-unit
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 15px
+    border-radius: 5px
+    background-color: #e6ecec
+    margin-top: 3px
+    .applied-filter__title
+        opacity: 0.5
+        font-size: 12px
+        letter-spacing: 0.67px
+        color: $color_filter-text
+    .applied-filter__close-btn
+        cursor: pointer
+        margin-left: 15px
+.filter-title-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 10px
+    margin-bottom: 15px
+    border-bottom: 1px solid $color_lPink
+.filter-title
+    opacity: 0.5
+    font-size: 12px
+    font-weight: 500
+    letter-spacing: 0.67px
+    color: $color_filter-text
+.price-range-field-wrapper
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    .price-range-field
+        padding: 5px 0
+        border: 1px solid $color_lPink
+        border-radius: 5px
+        color: $color_gray
+        text-align: center
+        height: 23px
+    .price-range-field__spacer
+        width: 10px
+        height: 1px
+        background-color: $color_gray
+        margin: 0 15px
+    .filter-price-btn
+        padding: 3px 15px
+        border-radius: 5px
+        border: none
+        background-color: $color_green
+        color: #fff
+        margin-left: 10px
+//кастомізація стилів двойного повзунка
+.filter-range-slider
+    padding: 0 5px
+.noUi-target
+    border: none
+    height: 10px
+    background-color: #e1e7e8
+.noUi-base
+    border-radius: 10px
+.noUi-connect
+    background-color: $color_green
+.noUi-handle
+    box-shadow: none
+    border: none
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle
+    right: -5px
+
+.noUi-horizontal .noUi-handle
+    height: 10px
+    width: 10px
+    border-radius: 50%
+    top: 0
+    background-color: $color_green-hover
+    &::before
+        display: none
+    &::after
+        display: none
+
+.brands-option-container
+    height: 200px
+    overflow: auto
+    &::-webkit-scrollbar
+        width: 4px
+        height: 4px
+    &::-webkit-scrollbar-button
+        display: none
+    &::-webkit-scrollbar-track
+        background-color: #e1e7e8
+    &::-webkit-scrollbar-track-piece
+        // background-color: #e1e7e8
+    &::-webkit-scrollbar-thumb
+        height: 10px
+        background-color: $color_green
+        border-radius: 3px
+.filter-checkbox-item
+    margin: 10px 0
+    &:first-child
+        margin-top: 0
+    &:last-child
+        margin-bottom: 0
+    .filter-checkbox-label, .filter-checkbox-quantity
+        font-size: 12px
+        letter-spacing: 0.67px
+        color: $color_filter-text
+    .filter-checkbox-quantity
+        opacity: 0.3
+        margin-left: 5px
+.filter-range-display-wrapper
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    .filter-range-display
+        padding: 5px 0
+        border: 1px solid $color_lPink
+        border-radius: 5px
+        color: $color_filter-text
+        text-align: center
+        height: 23px
+        flex-basis: 30%
+    .filter-range-display__spacer
+        width: 10px
+        height: 1px
+        background-color: $color_filter-text
+        margin: 0 15px
+
+.filter-buttons-block
+    margin: 25px 0
+    .filter-form-btn
+        border: none
+        background-color: $color_green
+        color: #fff
+        padding: 10px 20px
+        border-radius: 5px
+        letter-spacing: 0.75px
+        font-size: 12px
+        text-transform: uppercase
+        &:first-child
+            margin-right: 30px
+.filtered-products-block
+    flex-basis: 73%
+.filtered-products-top-block
+    @extend .filtered-products-wrapper
+    margin-bottom: 15px    
+
+.products-quick-sort-filter-block    
+    position: relative
+    select
+        display: none
+//перестилізація селекта
+.nice-select
+    border-color: $color_lPink
+    line-height: 35px
+    height: 37px
+    padding-left: 15px
+    &:active, &:focus
+        border-color: $color_lPink
+    //стрілочка випадайки
+    &::after
+        border-bottom: 1px solid $color_green
+        border-right: 1px solid $color_green
+        height: 7px
+        width: 7px
+        right: 15px
+    .current
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.67px
+        color: $color_filter-text                
+    //стрілочка фільтра
+    .current::before    
+        content: ""
+        display: inline-block
+        background-image: url('../img/sort-arrow.png')
+        background-repeat: no-repeat
+        width: 8px
+        height: 10px        
+        transform: rotate(180deg)
+        margin-right: 8px
+    //перемикаємо клас "up-arrow" через js для зміни орієнтації стрілочки
+    .current.up-arrow::before
+        transform: rotate(0deg)
+    .list
+        width: 100%
+        z-index: 2
+        .option       
+            font-size: 12px
+            font-weight: 300
+            letter-spacing: 0.67px
+            color: $color_filter-text
+            height: 35px
+            line-height: 37px
+            &:hover, &.focus, &.selected.focus
+                background-color: $color_beige
+            &.selected
+                font-weight: 500
+            &::before
+                content: ""
+                display: inline-block
+                background-image: url('../img/sort-arrow.png')
+                background-repeat: no-repeat
+                width: 8px
+                height: 10px
+                margin-right: 3px
+                transform: rotate(180deg)
+                margin-right: 8px
+            &[data-value="price_high"]::before
+                transform: rotate(0deg)
+
+.filtered-products-count
+    opacity: 0.5
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 0.67px
+    text-align: center
+    color: $color_filter-text
+    grid-column: 3/4
+    align-self: end
+    justify-self: end
+
+.filtered-products-wrapper
+    flex-basis: auto
+    margin-left: 1vw
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 20px

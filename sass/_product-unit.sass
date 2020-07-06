@@ -1,0 +1,306 @@
+.product-unit-wrapper
+    display: flex    
+    margin-bottom: 30px
+.product-unit-pic-block
+    margin-right: 10px
+.mobile-product-title-wrapper
+    display: none
+.product-unit-pic-block, .product-unit-info-block
+    flex-basis: 50%
+    
+.product-pic-container
+    width: 250px
+    margin: auto
+    margin-top: 95px
+.product__gallery-imgs
+    display: flex
+    justify-content: space-between
+    margin: 30px auto
+    
+
+.product__preview-img-wrapper
+    position: relative
+    margin: auto
+    width: 180px
+    img
+        width: 100%
+        object-fit: contain
+.product-slider-left-arrow, .product-slider-right-arrow
+    z-index: 1
+    width: 16px
+    height: 16px
+    border-bottom: 2px solid $color_green
+    border-right: 2px solid $color_green
+    content: ''
+    display: block
+.product-slider-left-arrow
+    position: absolute
+    left: -16px
+    top: calc(45% + 8px)
+    transform: rotate(-225deg)
+.product-slider-right-arrow
+    position: absolute
+    top: 45%
+    right: -16px
+    transform: rotate(-45deg)
+
+.product__gallery-img-wrapper
+    display: grid
+    place-items: center center
+    width: 75px
+    padding: 8px
+    border: 2px solid #eee
+    border-radius: 5px
+    cursor: pointer
+    img
+        width: 100%
+        object-fit: contain
+    &:hover
+        border-color: $color_green
+    
+.product__additional-options
+    display: flex
+    justify-content: space-between
+    .product__favorite-block, .product__share-block
+        display: flex
+        align-items: center
+        cursor: pointer
+        .favorite-product-title, .share-product-title
+            font-size: 12px
+            letter-spacing: 0.55px
+            color: #bfbfbf
+            margin-left: 5px
+
+.product__favorite-block
+    &:hover
+        .favorite-goods__ico
+            fill: $color_olive
+        .favorite-product-title
+            color: $color_olive
+
+.product__share-block
+    .share-product-ico-wrapper
+        .share-product__ico
+            width: 24px
+            height: 20px
+            fill: #bfbfbf        
+    &:hover
+        .share-product__ico
+            fill: $color_gray
+        .share-product-title
+            color: $color_gray
+
+.product-unit-info-block
+    p
+        font-size: 12px
+        color: $color_olive
+        letter-spacing: 0.55px
+.product-info-section   
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1px solid $color_lPink
+    padding-top: 10px
+    padding-bottom: 10px
+.product-main-title
+    font-weight: 400
+    text-transform: none
+    padding-bottom: 15px
+    text-align: start
+.product-code
+    opacity: 0.5
+    font-size: 14px
+    letter-spacing: 0.64px
+    margin-bottom: 30px
+    &__number
+        margin-left: 5px
+
+.product-price-delivery-wrapper
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+    border-top: 1px solid $color_lPink
+
+    .product-delivery-wrapper
+        margin-right: 5px
+    .product-delivery-block
+        display: flex
+.product-delivery-text-wrapper
+    .delivery-date
+        font-size: 11px
+        letter-spacing: 0.5px
+        color: $color_olive
+    .delivery-address
+        a         
+            font-size: 11px
+            letter-spacing: 0.5px
+            color: $color_green
+
+.product-buy-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 30px
+    border-top: 1px solid $color_lPink
+    padding-bottom: 30px
+    .product-mobile-price-wrapper
+        display: none
+    .goods-quantity
+        margin-right: auto
+        margin-bottom: 0
+    .product-one-click-buy
+        font-size: 14px
+        font-weight: 700
+        letter-spacing: 0.64px
+        color: $color_olive
+        text-transform: uppercase
+        padding: 16px 15px
+        border: 2px solid #e1e1e1
+        border-radius: 30px
+        margin-right: 0.7vw
+        margin-left: 0.7vw
+        white-space: nowrap
+        &:hover
+            background-color: #e1e1e1
+            color: $color_olive
+    .product-one-click-buy__btn
+        cursor: pointer
+    .goods-basket-block
+        .goods-basket-wrapper
+            padding: 12px 26px
+            p
+                font-size: 14px
+                font-weight: bold
+                letter-spacing: 0.64px
+            .goods-basket__ico
+                width: 25px
+                height: 23px
+                img 
+                    width: 100%
+.mobile-product-consistance-title
+    display: none
+.product-consistance-wrapper
+    padding-top: 30px
+    padding-bottom: 50px
+    .consistance-title
+        flex-basis: 35%
+    .consistance-content
+        flex-basis: 65%
+
+.product-category-wrapper
+    .category-link-wrapper
+        a
+            letter-spacing: 0.55px
+            color: $color_olive
+            &:hover
+                color: $color_green
+
+.product-builds-wrapper
+    padding-bottom: 30px
+    .builds-title
+        align-self: flex-start
+    .builds-unis-block
+        flex-basis: 40%
+        .builds-unit-wrapper
+            display: flex
+            justify-content: space-between
+            margin-bottom: 5px
+
+.product-unit-description__title
+    font-weight: 400
+    text-align: start
+    padding: 0 0 15px 0
+    width: fit-content
+    border-bottom: 2px solid $color_green
+    
+.product-unit-description__content
+    padding: 15px 0
+    font-size: 14px
+    line-height: 1.57
+    letter-spacing: 0.73px
+    color: $color_olive
+    border-top: 1px solid #eee
+
+.product-unit-stock-products
+    display: flex
+    flex-wrap: wrap
+    height: 120px
+    .stock-product-unit
+        flex-basis: 200px
+        max-width: 300px
+        flex-grow: 1
+        margin-left: 10px
+        &:first-child
+            margin-left: 0
+        &:hover
+            .stock-product-unit-wrapper
+                position: absolute
+                top: 0px
+                left: 0
+                width: 100%
+                z-index: 1
+                background-color: #fff
+.stock-product-unit
+    position: relative
+.stock-product-unit-wrapper
+    border: 1px solid #eeeeee
+    border-radius: 5px
+    padding: 10px
+    .goods-basket-wrapper
+        display: none
+        margin: 20px auto 0 auto
+        width: 110px
+    &:hover
+        .goods-basket-wrapper
+            display: flex
+
+
+.stock-product-title
+    font-size: 12px
+    letter-spacing: 0.55px
+    color: $color_olive
+
+.stock-product-wrapper
+    display: grid
+    grid-template-columns: 40% 60%
+    grid-column-gap: 10px
+    height: 100px
+    .price-block
+        display: grid
+        grid-template-columns: 1fr 1fr
+        .old-price
+            grid-column: 1/3
+            place-self: end start
+        .current-price
+            margin-left: 0
+.stock-img-container
+    display: grid
+    img
+        width: 100%
+        object-fit: contain
+        place-self: center center
+.stock-purchase-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .price-block
+        margin: 0
+    
+.product-unit-similar-products    
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 30px
+    height: 560px
+    overflow: hidden
+    padding: 10px
+    .goods__item
+        flex-basis: 200px
+        flex-grow: 1
+        margin-left: 1%
+        &:first-child
+            margin-left: 0
+            
+.mobile-basket-sticky
+    display: none
+    
+    

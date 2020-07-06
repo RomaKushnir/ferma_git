@@ -1,0 +1,115 @@
+.shops-location-block
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-column-gap: 1.7vw
+    grid-row-gap: 1.7vw
+    margin-bottom: 100px
+.mobile-map-tab-block
+    display: none
+    width: 100%
+.mobile-map-tab-wrapper
+    display: flex
+    text-transform: uppercase
+    margin-bottom: -1.7vw
+    .mobile-map-tab__title
+        flex-basis: 50%
+        font-size: 18px
+        letter-spacing: 0.43px
+        text-align: center
+        color: $color_olive
+        padding: 12px 0
+        cursor: pointer
+    .mobile-map-tab__title_active
+        border-bottom: 3px solid $color_green
+
+.shops-address-mobile-map-wrapper
+    position: relative
+    overflow: hidden
+    padding-bottom: 0
+    height: 0
+    transition: all ease-out 0.1s
+    .shops-address-mobile-map
+        position: absolute
+        left: 0
+        top: 9px
+        height: 100%
+        width: 100%
+.shops-address-mobile-map_show
+    padding-bottom: 100%
+.shop-location-unit
+    border: 1px solid $color_lPink
+    border-radius: 5px
+    margin: 0
+.shop-contacts-info-wrapper
+    padding: 1.5vw
+
+.shop__address
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.33px
+    color: $color_olive
+    margin-bottom: 17px
+
+.shop__contact-unit-wrapper
+    display: flex
+    align-items: center
+    margin-bottom: 16px
+    &:last-child
+        margin-bottom: 0
+
+.contact-unit__ico-wrapper
+    margin-right: 1vw
+
+.contact-unit__text
+    font-size: 14px
+    letter-spacing: 0.33px
+    color: $color_olive
+    white-space: nowrap
+
+.shop-location-map-wrapper
+    position: relative
+    overflow: hidden
+    padding-bottom: 40%
+    height: 0
+    iframe
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%
+    &:hover
+        .map-popup-block
+            display: block
+.map-popup-block
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    height: 100%
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        background-color: $color_olive
+        opacity: 0.5
+
+.show-map-btn
+    position: absolute
+    top: calc( 50% - 21px )
+    left: calc( 50% - 95px )
+    padding: 15px
+    border-radius: 30px
+    cursor: pointer
+    background-color: rgba(255, 255, 255, 0.25)
+    color: #fff
+    white-space: nowrap
+    font-size: 14px
+    font-weight: bold
+    letter-spacing: 0.64px
+    text-transform: uppercase
+    border: 2px solid #fff
+    box-sizing: border-box
+    width: 190px

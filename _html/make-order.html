@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./chunks/head.html', {"title": "зробити замовлення"})
+    <body>
+        <div class="center-main-container">
+            <header class="make-order-header make-order-header-wrapper">
+                <figure class="mini-logo-wrapper make-order-header__logo"><a href="/"><img src="/img/mini-logo.png" alt=""></a></figure>
+                <p class="make-order-header__text">Консультація за номером <span class="make-order-header__number">+38 (096) 888 71 33</span></p>
+            </header>
+            <h3 class="page-section-header make-order-title">Оформлення замовлення</h3>
+            <div class="make-order-main-wrapper">
+                <div class="make-order-forms-block">
+                    <div class="order-step-block-wrapper">
+                        <div class="order-step-block order-step-block_show order-step-block__main-info">
+                            <fieldset form="make-order-form">
+                                <label class="order-label" for="order-main-tel">Ваш номер телефона</label>
+                                <div class="order-input-wrapper required-input-wrapper user-input-tel-wrapper">
+                                    <input type="tel" name="order-main-tel" id="order-main-tel" required placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _">
+                                </div>
+                                <label class="order-label" for="order-add-tel">Додатковий номер телефона</label>
+                                <div class="order-input-wrapper user-input-tel-wrapper">
+                                    <input type="tel" name="order-add-tel" id="order-add-tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _">
+                                </div>
+                                <label class="order-label" for="order-email">E-mail</label>
+                                <div class="order-input-wrapper required-input-wrapper">
+                                    <input type="email" name="order-email" id="order-email" required>
+                                </div>
+                                <label class="order-label" for="order-name">ПІБ</label>
+                                <div class="order-input-wrapper required-input-wrapper">
+                                    <input type="text" name="order-name" id="order-name" required>
+                                </div>
+                            </fieldset>
+                            <p class="order-step-btn"><span>продовжити</span></p>
+                        </div>
+                    </div>
+
+                    <div class="order-step-block-wrapper">
+                        <div class="order-step-block  order-step-block__delivery">
+                            <fieldset class="" form="make-order-form">
+                                <legend class="order-step-block__title order-step-block__delivery-ico">Спосіб доставки</legend>
+                                <div class="step-input-block">
+                                    <p class="delivery-radio-wrapper">
+                                        <input type="radio" name="order-delivery" id="order-delivery-saved" checked>
+                                        <label class="order-delivery-label order-radio-label" for="order-delivery-saved">Збережені способи і адреси доставки</label>                                    
+                                    </p>
+                                    <div class="order-delivery-input-block order-delivery-input-block_active">
+                                        <div class="empty-delivery__plug delivery-plug">
+                                            <p class="delivery-plug__ico"><span>i</span></p>
+                                            <div class="delivery-plug__text">
+                                                <p>У вас ще немає збережених адрес і способів доставки.</p>
+                                                <p>Нова адреса і спосіб доставки буде збережений після першого замовлення.</p>                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <p class="delivery-radio-wrapper">
+                                        <input type="radio" name="order-delivery" id="order-delivery-option">
+                                        <label class="order-delivery-label order-radio-label" for="order-delivery-option">Новий спосіб і адрес доставки</label>                                    
+                                    </p>
+                                    <div class="order-delivery-input-block">
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </fieldset>
+                            <p class="order-step-btn order-delivery-btn"><span>продовжити</span></p>
+                        </div>
+                    </div>
+
+                    <div class="order-step-block-wrapper">
+                        <div class="order-step-block order-step-block__payment">
+                            <fieldset form="make-order-form">                                                                    
+                                <legend class="order-step-block__title order-step-block__payment-ico">Спосіб оплати</legend>                                                 
+                                <div class="step-input-block">
+
+                                </div>
+                            </fieldset>        
+                            <p class="order-step-btn"><span>продовжити</span></p>                
+                        </div>
+                        
+                    </div>  
+                </div>
+                <div class="make-order-final make-order-final-block">
+                    <form id="make-order-form" class="make-order-final__form" action=""></form>
+                </div>
+            </div>
+        </div>
+        <script src="js/libs.min.js"></script>    
+        <script src="js/common.js"></script>
+    </body>
+</html>

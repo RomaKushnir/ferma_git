@@ -1,0 +1,1876 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+    transition-duration: 0s
+
+input, textarea, select, button
+    font-family: inherit
+    font-size: 100%
+    box-sizing: border-box
+
+.center-main-container
+    max-width: 1290px
+    width: 95%
+    margin: auto
+    font-family: 'Rubik', sans-serif
+
+.page-thin-content-block
+    padding: 0 18vw
+
+.color-emphasize
+    color: $color_green !important
+
+.header-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 12px
+    font-weight: 400
+    padding: 5px 0
+    border-bottom: 1px solid #eee
+    .purchase-info
+        display: flex
+        a:first-child
+            margin-right: 10px
+
+    .cabinet-lang
+        display: flex
+        align-items: center
+        margin: 5px 0
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.33px        
+.cabinet-management-block
+    position: relative       
+    .cabinet-register-btn
+        text-decoration: underline
+        cursor: pointer
+        color: $color_olive
+        &:hover
+            color: $color_green
+    .text-opacity
+        opacity: 0.5
+    .cabinet-entrance-btn
+        cursor: pointer
+        color: $color_gray
+        margin-right: 5px
+        &:hover
+            color: $color_green
+            opacity: 1
+
+.user-cabinet-popup-container
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 4
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+
+.user-cabinet-popup-container_active
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    cursor: pointer
+.user-cabinet-popup-window
+    display: none
+    position: relative
+    top: 100px
+    width: 400px
+    background-color: #fff
+    cursor: default
+    border-radius: 5px
+.user-cabinet-popup-window_active
+    display: block
+.user-cabinet-popup__tabs-block
+    display: flex    
+    .user__tab
+        flex-basis: 50%
+        text-align: center
+        padding: 15px 0
+        font-size: 18px
+        line-height: 21px
+        letter-spacing: 0.935065px
+        color: $color_olive
+        opacity: 0.5
+        cursor: pointer
+        border-bottom: 1px solid $color_lPink
+        &_active
+            opacity: 1
+            border-bottom: 2px solid $color_green
+.switch-forms-wrapper
+    padding: 30px
+    .tab-form
+        display: none
+    .tab-form_active
+        display: block
+.cabinet-entrance-form
+    label
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.333333px
+        color: $color_olive
+    .user-login-pattern                
+        font-weight: 300
+        font-size: 12px
+        line-height: 22px
+        letter-spacing: 0.285714px
+        color: $color_olive
+        opacity: 0.3
+        margin: 5px 0 15px 0
+.user-password-label-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .user-password-hint-link
+        font-weight: 300
+        font-size: 12px
+        line-height: 22px
+        letter-spacing: 0.285714px
+        color: $color_green
+        &:hover
+            cursor: pointer
+.user-login-input-wrapper, .user-password-input-wrapper
+    margin-top: 5px
+
+.user-password-input-wrapper
+    position: relative
+    .user-password-show-ico
+        content: ""
+        position: absolute
+        top: 12px
+        right: 15px
+        background-image: url('../img/eye-password.svg')
+        width: 19px
+        height: 14px
+        cursor: pointer
+
+.user-login-btn
+    margin: 40px auto 15px
+    background-color: $color_green
+    color: #fff
+    &:hover
+        background-color: $color_olive
+
+.existed-accounts-header
+    font-weight: 300
+    font-size: 14px
+    line-height: 22px
+    letter-spacing: 0.333333px
+    color: $color_olive
+    opacity: 0.5
+    margin-bottom: 15px
+
+.existed-accounts-wrapper
+    display: flex
+    .existed-account
+        margin-right: 5px
+        border-radius: 5px
+        width: 25px
+        height: 25px
+        cursor: pointer
+    .facebook-account-login-btn
+        background-image: url('../img/facebook-ico.svg')
+        background-repeat: no-repeat
+    .google-account-login-btn
+        background-image: url('../img/google-plus-ico.svg')
+        background-repeat: no-repeat
+
+.cabinet-register-form-wrapper
+    .user-input-wrapper
+        margin-bottom: 15px 
+.register-business-block
+    display: none
+.register-business_active
+    display: block
+.register-client-switch-btn-wrapper
+    margin: 20px auto    
+.client-switch-btn
+    font-weight: 300
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 0.285714px
+    color: $color_green
+    cursor: pointer
+    opacity: 0.7
+    display: none
+    &:hover
+        opacity: 1
+.client-switch-btn_active
+    display: block
+.user-register-label
+    font-weight: 300
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 0.285714px
+    color: $color_olive    
+    &::before
+        margin-top: -2px !important
+        opacity: 1
+        cursor: pointer
+.user-register-agreement-link
+    font-weight: 300
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 0.285714px
+    color: $color_green
+    &:hover
+        text-decoration: underline
+.user-register-btn
+    margin: 40px auto 15px
+    &:hover
+        background-color: $color_green
+        color: #fff
+
+.user-register-login-cross-btn
+    font-weight: 300
+    font-size: 14px
+    line-height: 22px
+    letter-spacing: 0.333333px
+    color: $color_green
+    cursor: pointer
+    text-align: center
+.lang-block
+    border-left: 1px solid #e6e6e6
+    display: flex
+    align-items: center
+    height: 22px
+    .active-language
+        margin-left: 10px
+    .lang-block__btn
+        margin-top: 2px
+        margin-left: 4px
+        &:hover
+            cursor: pointer
+
+.call-logo-cabinet
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: 400
+    font-size: 12px
+    padding: 14px 0 5px 0
+    border-bottom: 1px solid #eee
+.logo-wrapper
+    .mobile-menu-block, .mobile-basket-block
+        display: none
+        width: 40px
+.phone-logistic-block
+    flex-basis: 40%
+    display: grid
+    grid-template-columns: 1fr 8fr
+    grid-template-rows: 4fr 3fr
+    grid-column-gap: 10px
+    grid-row-gap: 5px
+    grid-template-areas: "a b" "c d"
+    .phone-ico-wrapper
+        grid-area: a
+        .phone-ico
+            border-right: 1px solid #e6e6e6
+            padding: 7px 15px 7px 0
+    .phone-number-wrapper
+        grid-area: b
+        .phone-number
+            font-size: 18px
+            font-weight: 300
+            letter-spacing: 0.5px
+            color: $color_gray
+        .call-us
+            font-size: 16px
+            font-weight: 500
+            color: $color_green
+            margin-bottom: 5px
+            letter-spacing: 0.44px
+    .logistic-offer-wrapper
+        grid-area: d
+
+        .free-delivery
+            color: $color_red
+            font-size: 12px
+            font-weight: 500
+        .delivery-offer
+            color: $color_gray
+            font-size: 12px
+            font-weight: 300
+.cabinet-block
+    flex-basis: 40%
+    background-color: #fff
+.cabinet-wrapper
+    display: grid
+    grid-template-columns: 5fr 1fr 1fr 1fr
+    align-items: center
+    grid-column-gap: 1vw
+
+.search-block__form
+    margin-right: 1vw
+    position: relative
+    .search-block__input
+        border: 1px solid $color_gray
+        height: 48px
+        width: 100%
+        padding: 7px 0 0 55px
+        border-radius: 30px
+    .search-block__search-ico
+        background-image: url(../img/search.svg)
+        width: 24px
+        height: 24px
+        border: none
+        background-color: #fff
+        position: absolute
+        top: 13px
+        left: 22px
+        
+.cabinet-ico-block
+    position: relative
+    place-self: center
+.cabinet-ico-wrapper
+    height: 30px            
+    .cabinet__ico
+        cursor: pointer        
+        fill: $color_olive
+        &:hover
+            fill: $color_green    
+    .cabinet__favorite-ico                
+        width: 33px
+        fill: #C4C4C4
+        &:hover
+            fill: $color_olive
+    .cabinet__avatar-ico
+        width: 26px
+    .cabinet__basket-ico
+        width: 36px
+        margin-right: 5px
+.cabinet-basket-ico-wrapper
+    position: relative
+    .basket-block__added-quantity
+        // display: none
+        position: absolute
+        top: -7px
+        right: -3px
+        background-color: $color_green
+        color: #fff
+        height: 18px
+        width: 18px
+        border-radius: 50%
+        text-align: center
+        line-height: 1.5
+.person-cabinet__dropdown-block
+    display: none
+    position: absolute
+    right: -20px
+    top: 70px
+    width: 264px        
+    border-radius: 5px
+    background-color: #fff
+    box-shadow: 0 0 10px rgba(33,33,33,0.2)
+    z-index: 2
+.person-cabinet__dropdown-block_show
+    display: block
+.person-cabinet__greetings
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.33px
+    color: $color_olive
+    border-bottom: 1px solid #bfbfbf
+    padding: 10px 15px
+    
+.person-cabinet__options
+    padding: 5px
+.person-cabinet__option
+    position: relative    
+    // cursor: pointer
+    .person-cabinet__img-wrapper
+        position: absolute
+        top: 8px
+        left: 10px
+        width: 14px
+        .person-cabinet__img     
+            display: block
+            margin: auto    
+            fill: #e1e1e1
+            fill-opacity: 0.5
+
+    .person-cabinet__option-link
+        display: inline-block
+        padding: 10px 40px
+        width: 254px
+        width: 100%
+        font-size: 12px
+        font-weight: 300 
+        letter-spacing: 0.29px
+        color: $color_olive
+        opacity: 0.7
+    &:hover
+        background-color: $color_beige
+        .person-cabinet__img-wrapper
+            .person-cabinet__img
+                fill: $color_green
+        .person-cabinet__option-link
+            color: $color_green
+            opacity: 0.7
+                
+.person-cabinet__dropdown-block
+    .person-cabinet__option.user-logout
+        padding: 2px 5px
+        border-top: 1px solid #bfbfbf
+        .person-cabinet__img-wrapper
+            left: 15px
+            top: 10px
+
+.basket-popup-container
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    z-index: 4
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0,0, 0.5)
+    cursor: pointer
+.basket-popup-window
+    display: none
+    float: right    
+    width: 70vw
+    max-width: 700px
+    height: 100%
+    background-color: #fff
+    cursor: default 
+//підрахунки для прокрутки товарів корзини   
+.basket-top-position-wrapper
+    height: calc(100% - 133px)        
+    .basket-popup-main-wrapper
+        height: calc(100% - 33px - 60px)
+        .basket-products-wrapper
+            height: 100%
+            overflow-y: auto                   
+.basket-popup-header-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px
+    background-color: #f6f6f6
+    .basket-popup-title        
+        font-size: 18px
+        line-height: 21px
+        letter-spacing: 0.428571px
+        color: $color_olive
+    .basket-popup__close-btn
+        cursor: pointer
+        .cross-line
+            height: 1.5px        
+.basket-popup-main-wrapper
+    padding: 15px 10px 0 15px        
+.basket-control-btns-wrapper
+    display: flex
+    margin-bottom: 15px
+    .basket-remove-all-btn
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 0.333333px
+        color: $color_olive
+        opacity: 0.5
+        cursor: pointer
+        &:hover
+            opacity: 1
+.basket-products-wrapper    
+    &::-webkit-scrollbar        
+        width: 4px
+        height: 4px        
+    &::-webkit-scrollbar-button
+        display: none
+    &::-webkit-scrollbar-track
+        background-color: #e1e7e8
+    &::-webkit-scrollbar-track-piece
+        // background-color: #e1e7e8
+    &::-webkit-scrollbar-thumb
+        height: 10px
+        background-color: $color_green        
+        border-radius: 3px
+.basket-no-product-plug
+    // display: none
+    font-weight: 300
+    font-size: 18px    
+    letter-spacing: 0.545455px
+    color: $color_olive
+    padding: 30px 0 
+.basket-product-item
+    display: grid
+    grid-template-columns: 80px 1fr 30px               
+    border: 1px solid $color_lPink
+    border-radius: 5px
+    margin-bottom: 7px
+    margin-right: 5px
+    &:last-of-type
+        margin-bottom: 0
+.product-pic-wrapper
+    place-self: center center
+    width: 60px
+    height: 60px
+    img     
+        width: 100%            
+        object-fit: contain
+.product-basket-units-wrapper
+    display: flex
+    justify-content: space-between 
+    padding: 30px 0       
+.product-close-btn-wrapper
+    background-color: #f6f6f6        
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    &:hover
+        background-color: rgba(254, 88, 41, 1)            
+.product-basket-units-wrapper
+.product-title-wrapper
+    flex-basis: 50%      
+    align-self: flex-start  
+.product-quantity-wrapper
+    flex-basis: 35%        
+    display: flex
+    align-items: center
+.product-price-wrapper
+    flex-basis: 15%
+    display: flex
+    align-items: center
+    padding-right: 10px        
+    .current-price
+        font-size: 12px
+.close-btn
+    width: 15px
+    height: 15px    
+    .cross-line
+        width: 20px
+        height: 1px
+        background-color: $color_olive        
+        transform-origin: 0% 100%
+        &:first-of-type
+            transform: rotate(45deg)            
+        &:last-of-type
+            transform: rotate(135deg) translate(-10px, -10px)
+            transform-origin: 0% 0%
+    
+.product-title-wrapper    
+    .product-title        
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.545455px
+        color: $color_olive        
+        margin-bottom: 10px
+    .product-additional-info
+        @extend .product-title
+        margin: 0
+        .product-additional__weight
+            margin-left: 25px
+            opacity: 0.5
+.product-quantity-wrapper
+    .goods-quantity
+        margin: 0
+.product-price-wrapper
+    .price-block
+        margin: 0
+.basket-popup-footer-wrapper
+    background-color: #f6f6f6    
+    padding: 15px
+
+.basket-summary-info-wrapper
+    display: flex
+    justify-content: space-between
+    p 
+        font-weight: 300
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.545455px
+        color: $color_olive
+    &:first-of-type
+        margin-bottom: 10px
+.basket-summary-info__units-wrapper
+    display: flex
+    .basket-order-pic-wrapper
+        margin-right: 10px
+        width: 12px
+        height: 12px
+        img 
+            width: 100%
+            height: 100%
+            object-fit: contain    
+.basket-btn-price-wrapper
+    margin: 15px 0
+.basket-submit-link-wrapper
+    flex-basis: 45%
+    .basket-submit-link
+        display: inline-block
+        background-color: $color_green
+        color: #fff
+        width: 100%
+        height: auto        
+        text-align: center
+        padding: 15px 0
+p.basket-overall-price-wrapper    
+    font-size: 22px
+    line-height: 26px
+    font-weight: 700
+    color: $color_green
+    align-self: flex-end     
+    .basket-overall-price__title
+        color: $color_olive     
+        margin-right: 2vw 
+    .basket-overall__price-currency
+        font-size: 12px
+        height: 14px
+        font-weight: normal
+p.basket-overall-price__title
+    font-size: 22px
+    line-height: 26px
+    font-weight: 700
+    color: $color_olive     
+    margin-right: 2vw 
+
+.basket-sum-info
+    // visibility: hidden
+    margin-top: 5px
+    display: flex
+    justify-content: flex-end
+    .basket-sum-title
+        font-size: 16px
+        font-weight: 300
+        color: $color_gray
+        letter-spacing: 0.44px
+        white-space: nowrap
+    .basket-sum
+        font-size: 16px
+        font-weight: 500
+        color: $color_red
+        letter-spacing: 0.47px
+        white-space: nowrap
+
+    
+.sticky-block
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.3)
+    z-index: 5
+    padding: 5px 0
+    transition: 0.3s
+    .cabinet-wrapper
+        grid-template-columns: 330px 9fr 1fr 1fr 1fr
+        .catalog-btn-sticky-wrapper
+            justify-self: center
+            .catalog-btn-sticky
+                top: 0
+                left: 0
+                &:hover
+                    background-color: $color_green-hover
+        .cabitet__search-block
+            margin: 0 5%
+            margin-left: 10%
+            .search-block__input
+                background-color: #f7f7f7
+                border-color: #f7f7f7
+            .search-block__search-ico
+                background-color: #f7f7f7
+    .basket-sum-info
+        display: none
+
+.sticky-cabinet-wrapper
+    max-width: 1290px
+    width: 95%
+    margin: auto
+
+.catalog-btn-sticky-wrapper
+    display: none
+    cursor: pointer
+    .catalog-btn-substrate
+        position: relative
+        top: 0
+        left: 0
+        background-color: transparent
+        .catalog-btn
+            display: flex
+            align-items: center
+            position: absolute
+            z-index: 3
+            top: 0
+            left: 5px
+            align-items: center
+            width: calc(100% - 10px)
+            height: 100%
+            font-size: 12px
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 0.75px
+            padding-left: 35px
+            background: $color_green
+            color: #fff
+            border-radius: 30px
+    .cabinet__basket-block
+        margin-right: 7vw
+
+.header-menu-block
+    display: grid
+    grid-template-columns: 318px 1fr    
+.header-menu-catalog-block
+    position: relative
+
+.catalog-menu-btn-wrapper    
+    height: 100%    
+    width: 100%
+.catalog-btn-substrate    
+    width: 280px
+    height: 50px
+    border-radius: 30px
+    position: absolute
+    top: 15px    
+    left: 25px
+    background-color: #fff
+    z-index: 3
+
+.catalog-btn-substrate_menu-hover
+    background-color: #bcbcbc
+
+//стилізація кнопки каталогу товарів
+.catalog-btn
+    display: flex
+    align-items: center
+    position: relative
+    top: -5px
+    left: 5px
+    align-items: center
+    width: 270px
+    height: 49px
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0.75px
+    padding-left: 30px
+    background: $color_green
+    color: #fff
+    border-radius: 30px
+    z-index: 4
+    .catalog-btn-ico
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 10px
+        margin-right: 15px
+        .catalog-btn-ico__line
+            width: 15px
+            height: 2px
+            background-color: #fff
+    p
+        white-space: nowrap
+
+
+.catalog-btn-menu
+    cursor: pointer
+
+.catalog-btn-hover-modal-background_active
+    position: fixed
+    top: 0
+    left: 0
+    background-color: #212121
+    opacity: 0.3
+    width: 100%
+    height: 100%
+    z-index: 2
+
+//каталог товарів
+//начальний блок
+.catalog-menu-wrapper
+    display: none
+    position: absolute
+    top: 35px
+    // left: 0
+    width: 330px
+    background-color: $color_lPink
+    z-index: 2    
+    .catalog-menu
+        position: relative
+    .catalog-drop-out
+        position: absolute
+        z-index: 2
+        top: 0
+        left: calc(100% + 0px)
+        width: 300px        
+        display: none        
+        background-color: $color_lPink
+        border-left: 1px solid $color_lPink
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15) 
+.catalog-drop-out-menu    
+    .drop-out-sub-category__unit
+        display: inline-flex                
+        width: 100%             
+        padding-left: 25px
+        .sub-category-link
+            @extend .catalog-link
+            width: 100%
+        &:hover
+            .sub-category-link
+                color: $color_olive
+//відображення на головній строрінці макс розмір
+.catalog-menu-btn-wrapper_home1024
+    position: relative
+    top: 32px
+
+.catalog-menu-wrapper_display
+    display: block  !important
+//випадання по кліку, стікі блока
+.sticky-catalog-menu-wrapper_show
+    display: block !important    
+    position: fixed
+    z-index: 2
+    top: 35px    
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)    
+
+.catalog-list__unit
+    // height: 45px
+    background-color: #f7f7f7
+    margin-bottom: 1px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    cursor: pointer
+    &:hover
+        background: #f0f0f0
+        .ico-title-wrapper
+            .catalog-link                
+                color: $color_olive
+                font-weight: 500
+        .catalog-arrow
+            border-color: $color_green
+        .catalog-drop-out
+            display: block
+    &:first-of-type
+        padding-top: 30px
+        height: 77px
+    &:last-of-type
+        margin-bottom: 0
+
+    .ico-title-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .catalog-pic
+            margin: 0 15px 0 25px            
+            img
+                width: 25px
+                height: 25px
+                object-fit: contain
+    .catalog-arrow
+        width: 8px
+        height: 8px
+        margin-right: 25px
+        border-bottom: 2px solid $color_lPink
+        border-right: 2px solid $color_lPink
+        content: ''
+        display: block
+        transform-origin: 66% 66%
+        transform: rotate(-45deg)
+
+.catalog-link
+    color: #747474
+    letter-spacing: 0.88px
+    font-size: 14px
+    font-weight: 400
+    padding: 16px 0            
+    
+
+.header-menu-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding: 15px 0
+    li
+        padding: 10px 20px
+        a
+            font-size: 17px
+            letter-spacing: 0.47px
+            font-weight: 400
+            color: $color_gray
+            transition-duration: 0s
+            white-space: nowrap
+            &:hover
+                color: $color_green
+                transition-duration: 0s
+
+.catalog-slider-block
+    display: flex
+    font-size: 12px
+.catalog-block-plug
+    display: block    
+    min-width: 330px
+    min-height: 490px
+    margin-right: 3px   
+
+.main-slider
+    width: 100%
+    overflow: hidden
+    .main-slider__block
+
+.main-slider__unit
+    position: relative
+    .slide-pic
+        width: 100%
+        max-height: 508px
+        object-fit: cover
+
+.slider-btn-left
+    position: absolute
+    left: 0
+    top: 40%
+    z-index: 1
+    cursor: pointer
+    border-top-right-radius: 50%
+    border-bottom-right-radius: 50%
+    transition: 0.1s
+.slider-btn-right
+    position: absolute
+    right: 0
+    top: 40%
+    z-index: 1
+    cursor: pointer
+    border-top-left-radius: 50%
+    border-bottom-left-radius: 50%
+    transition: 0.1s
+.slide-text
+    position: absolute
+    left: 8%
+    top: 25%
+    .slide-text-topic
+        font-size: 18px
+        font-weight: 400
+        color: $color_green
+        text-transform: uppercase
+        letter-spacing: 0.71px
+    .slide-text-header
+        font-size: 42px
+        font-weight: 500
+        letter-spacing: 1.65px
+        color: #424242
+        margin: 20px 0
+    .slide-text-description
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.57
+        letter-spacing: 0.55px
+        color: #424242
+        width: 55%
+.main-slider__buy-btn
+    position: absolute
+    top: 65%
+    left: 8%
+    width: 218px
+    height: 50px
+    background: $color_green
+    border-radius: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    &:hover
+        background-color: $color_olive
+
+    p
+        font-family: 'Helvetica', sans-serif
+        font-weight: 700
+        font-size: 12px
+        letter-spacing: 0.75px
+        color: #ffffff
+        text-transform: uppercase
+
+.grouped-goods
+    padding: 20px 0
+
+.popular-goods
+    .popular-goods-label
+        background: $color_green
+        color: #fff
+        font-size: 10px
+        padding: 9px 15px
+        line-height: 1.7
+        border-radius: 20px
+        font-weight: 500
+        letter-spacing: 0.63px
+        display: inline-block
+
+.goods-category
+    display: inline
+    margin-left: 15px
+    li
+        display: inline-block
+        padding: 9px 15px
+        box-sizing: border-box
+        border: 1px solid #fff
+        &:hover
+            border: 1px solid $color_green
+            border-radius: 20px
+        a
+            font-size: 12px
+            letter-spacing: 0.75px
+            color: $color_gray
+            font-weight: 400
+            opacity: 0.7
+
+.section-header
+    display: flex
+    align-items: center
+    margin: 15px 0 30px 0
+    .section-header-title
+        font-weight: 700
+        font-size: 16px
+        letter-spacing: 0.73px
+        margin: 0 10px 0 5px
+        text-transform: uppercase
+        color: $color_gray
+        white-space: nowrap
+    .header-line
+        background-image: url(../img/header-line.png)
+        background-size: cover
+        width: 100%
+        height: 16px
+
+.goods-grid-position-block
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 2%
+.goods__item
+    position: relative
+    border: 1px solid #eee
+    border-radius: 5px
+    padding: 0 20px
+    margin-bottom: 10px
+    &:hover
+        box-shadow: 0 0 10px #ddd
+
+.goods-labels-wrapper
+    position: absolute
+    z-index: 1
+    right: 4%
+    top: 2%
+.goods-discount-label-wrapper, .goods-new-label-wrapper
+    width: 60px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-top-left-radius: 63%
+    border-bottom-right-radius: 63%
+    font-size: 12px
+    font-weight: bold
+    font-family: 'Helvetica', sans-serif
+    letter-spacing: 0.55px
+    display: none
+.goods-discount-label-wrapper
+    background: $color_green
+    margin-bottom: 7px
+    .discount-label-value
+        color: #fff
+.goods-new-label-wrapper
+    background: $color_red
+    .new-label-value
+        color: #fff
+        text-transform: uppercase
+
+.show-discount-label
+    display: flex
+.show-new-label
+    display: flex
+.goods-img-block
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 300px
+    img
+        cursor: pointer
+        width: 150px
+        height: 150px
+        object-fit: contain
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(rgba(255,255,255,0.2)))
+
+.goods-info-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    min-height: 235px
+    border-top: 1px solid #eee
+    padding-bottom: 15px
+.goods-title-wrapper
+    margin-top: 20px
+    padding: 0 1vw
+    .goods-title
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.64px
+        color: $color_olive
+        text-align: center
+        line-height: 1.3
+    .goods-weight
+        margin-left: 10px
+        // font-weight: 700
+
+.goods-purchase-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+.price-block
+    display: flex
+    justify-content: center
+    align-items: baseline
+    margin-bottom: 35px
+    .old-price, .price-text
+        font-size: 12px
+        letter-spacing: 0.55px
+        color: #bfbfbf
+    .current-price
+        font-size: 22px
+        letter-spacing: 1px
+        color: $color_olive
+        font-weight: 700
+        margin: 0 5px
+
+.goods-quantity
+    display: flex
+    align-items: center
+    border: 1px solid #eee
+    border-radius: 20px
+    margin-bottom: 10px
+    height: 38px
+    &__selected-qty
+        padding: 12px
+        font-size: 12px
+        font-weight: bold
+    &__add-btn
+        cursor: pointer
+        padding: 12px 14px
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+        &:hover
+            background: $color_green
+            color: #fff
+    &__remove-btn
+        cursor: pointer
+        padding: 12px 14px
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        &:hover
+            background: $color_red
+            color: #fff
+
+.goods-basket-block
+    display: flex
+    align-items: center
+.goods-basket-wrapper
+    display: flex
+    align-items: center
+    background-color: $color_green
+    border-radius: 30px
+    border: 1px solid #eee
+    cursor: pointer
+    padding: 8px 17px
+    margin-right: 15px
+    &:hover
+        background-color: $color_green-hover
+    .goods-basket__btn
+        color: #fff
+        font-size: 10px
+        font-weight: 500
+        letter-spacing: 0.45px
+        white-space: nowrap
+        text-transform: uppercase
+        margin-right: 10px
+    .goods-basket__ico
+        width: 17px
+        height: 16px
+        img
+            width: 100%
+
+.favorite-goods-wrapper
+    .favorite-goods__ico
+        width: 20px
+        height: 18px
+        fill: #C4C4C4
+        cursor: pointer
+        &:hover
+            fill: $color_red
+
+.show-all-goods-btn
+    margin: 20px auto
+    width: 212px
+    height: 49px
+    line-height: 3.4
+    border: 2px solid $color_green
+    border-radius: 30px
+    cursor: pointer
+    text-align: center
+    &:hover
+        background: $color_olive
+        border-color: $color_olive
+        a
+            color: #fff
+    a
+        font-size: 14px
+        text-transform: uppercase
+        color: #424242
+        letter-spacing: 0.88px
+        font-weight: 700
+
+.our-advantage-block
+    padding-bottom: 20px
+    .section-header-title
+        width: 170px
+.advantage-grid-position-block
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-auto-rows: minmax(280px, auto)
+    grid-auto-columns: minmax(200px, auto)
+    grid-gap: 2%
+
+.advantage-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid #eee
+    border-radius: 5px
+    color: #424242
+    box-shadow: 0 0 2px #eee
+    margin-bottom: 20px
+    &:hover
+        box-shadow: 0 0 10px #ddd
+    &__block
+        margin: 30px 0 15px 0
+    &__header
+        margin: 0 0 15px 0
+        font-size: 18px
+        font-weight: bold
+        letter-spacing: 0.82px
+    &__description
+        text-align: center
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.64px
+        line-height: 1.57
+        width: 88%
+
+.person-reviews-block
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+.review-pics-block
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1.5fr 1fr
+    &__unit1
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+
+    &__unit2
+        display: flex
+        justify-content: flex-start
+        align-items: flex-end
+
+    &__unit3
+        display: flex
+        justify-content: flex-end
+
+    &__unit4
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__unit5
+        display: flex
+        justify-content: center
+        grid-column-end: 3
+
+.review-pic-wrapper
+    &__item2, &__item3, &__item5
+        object-fit: cover
+        border-radius: 50%
+        padding: 10px
+        border: 3px solid white
+        cursor: pointer
+    &__item1
+        width: calc(15px + 1vw)
+        height: calc(15px + 1vw)
+        background-color: #8bd563
+        border-radius: 50%
+        margin: 0 2vw 4vw 0
+    &__item2
+        margin: 0 0 -4vw 2vw
+        width: calc(140px + 7vw)
+        height: calc(140px + 7vw)
+    &__item3
+        margin: 0 -20px 0 0
+        width: calc(200px + 7vw)
+        height: calc(200px + 7vw)
+    &__item4
+        background-color: $color_green
+        width: calc(30px + 2vw)
+        height: calc(30px + 2vw)
+        display: block
+        border-radius: 50%
+        margin: 20px 30px 0 0
+
+    &__item5
+        width: calc(120px + 7vw)
+        height: calc(120px + 7vw)
+        margin-top: calc(-150px + 8vw)
+.review-pic-slider_active
+    border-color: $color_green
+.reviews-slider__wrapper
+    .slick-dots
+        position: relative
+        left: 0px
+        width: 100%
+        li
+            width: 50px
+            button
+                height: 1.5px
+                padding: 0
+                background-color: $color_green
+                width: 30px
+                &::before
+                    content: ''
+
+        .slick-active
+            button
+                transform: scale(1.5)
+
+.review-text-wrapper
+    color: $color_gray
+    margin-left: 8%
+    overflow: hidden
+    position: relative
+    padding-top: 80px
+    .review__from-man
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.78
+        letter-spacing: 0.82px
+        text-transform: uppercase
+    .review__header
+        font-size: 38px
+        line-height: 0.84
+        letter-spacing: 1.73px
+        text-transform: uppercase
+        font-weight: bold
+        margin: 25px 0 60px 0
+
+.person-review
+    &__img-wrapper
+        display: none
+    &__content
+        font-size: 18px
+        font-weight: 300
+        line-height: 1.78
+        letter-spacing: 0.82px
+        margin: 0 0 70px 0
+        width: 100%
+    &__name
+        font-size: 24px
+        font-weight: 400
+        line-height: 1.33
+        letter-spacing: 1.09px
+        margin-bottom: 10px
+
+.review-text-wrapper__sent-btn
+    width: 212px
+    height: 49px
+    background-color: $color_green
+    border-radius: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 60px
+    cursor: pointer
+    p
+        color: white
+        font-size: 16px
+        font-weight: 500
+        letter-spacing: 1px
+    &:hover
+        background-color: $color_olive
+
+.blog-news-block
+    .section-header-title
+        width: 160px
+
+.blog-article-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 2vw
+.blog-item
+    margin: 10px 0
+.blog-item__pic-block
+    position: relative
+    img
+        width: 100%
+    .blog-item_on-hover
+        position: absolute
+        width: 50px
+        height: 50px
+        top: calc( 50% - 25px)
+        left: calc( 50% - 25px )
+        background: $color_green
+        border-radius: 50%
+        display: none
+        img
+            width: 40%
+
+.blog-item
+    &:hover
+        .blog-item_on-hover
+            display: block
+            display: flex
+            justify-content: center
+            align-items: center
+        .blog-item__pic-block
+            >img
+                filter: contrast(115%) brightness(85%)
+        .blog-item-text__header
+            color: $color_green
+    &__pic-block
+        margin-bottom: 30px
+.blog-item-text-wrapper
+    display: flex
+    align-items: flex-start
+.published-date
+    border: 1.5px solid #e6e6e6
+    margin-right: 20px
+    .published-date__month
+        border-bottom: 1.5px solid #e6e6e6
+        font-size: 12px
+        font-weight: bold
+        letter-spacing: 0.33px
+        color: $color_gray
+        text-align: center
+        text-transform: uppercase
+        padding: 10px 0
+        width: 80px
+    .published-date__day
+        font-size: 32px
+        font-weight: bold
+        letter-spacing: 0.89px
+        color: $color_gray
+        text-align: center
+        padding: 10px 17px
+        width: 80px
+.blog-item-text
+    color: $color_gray
+    &__header
+        font-size: 18px
+        font-weight: 500
+        letter-spacing: 0.5px
+        margin-bottom: 10px
+    &__content
+        font-weight: 300
+        font-size: 12px
+        letter-spacing: 0.4px
+        overflow: hidden
+        text-overflow: ellipsis
+.blog-item-text__footer
+    display: grid
+    grid-template-columns: 100px 1.5fr 1fr
+    margin-top: 10px
+    .blog-category-link
+        grid-column-start: 2
+        grid-column-end: 3
+    .blog-item-details-wrapper
+        grid-column-start: 3
+        grid-column-end: 4
+        justify-self: end
+.blog-category-link
+    a
+        color: $color_green
+        font-size: 15px
+        letter-spacing: 0.5px
+        font-weight: 300
+
+.blog-item-details-wrapper
+    display: flex
+    align-items: center
+    .blog-item-details__pic
+        padding-right: 5px
+
+.blog-item-details__link
+    a
+        color: $color_green
+        font-size: 15px
+        letter-spacing: 0.5px
+        font-weight: 300
+
+.show-all-publications-btn
+    margin: 40px auto 10px auto
+    width: 212px
+    border: 2px solid $color_gray
+    border-radius: 30px
+    cursor: pointer
+    padding: 15px 20px
+    text-align: center
+    &:hover
+        background: $color_gray
+        a
+            color: #fff
+    a
+        font-size: 14px
+        color: #424242
+        letter-spacing: 0.88px
+        font-weight: 500
+
+.about-company-block
+    background-image: url(../img/about/about.png)
+    background-size: cover
+    min-height: 348px
+    padding-top: 10px
+    .section-header-title
+        width: 180px
+
+.about-company-text-block
+    margin-bottom: 30px
+    p
+        font-weight: 400
+        font-size: 16px
+        color: $color_gray
+        line-height: 26px
+        letter-spacing: 0.73px
+        width: 70%
+        text-indent: 1.5rem
+    p:first-child
+        margin-bottom: 20px
+
+.about-company-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 212px
+    height: 49px
+    background-color: $color_green
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: 1px
+    border-radius: 30px
+    cursor: pointer
+    &:hover
+        background-color: $color_olive
+
+.brands-block
+    padding: 30px 0 40px 0
+
+.brands-slider-wrapper
+    overflow: hidden
+    width: 100%
+
+.brands-slider-block
+    .brands-slider-block__unit
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px solid #eee
+        width: 150px !important
+        height: 110px
+        margin: 0 5px
+        border-radius: 5px
+        img
+            height: 80%
+            width: 80%
+            object-fit: contain
+    .slick-dots
+        bottom: -35px
+        li
+            margin: 0
+            button::before
+                color: #ddd
+                opacity: 1
+                font-size: 10px
+                &:hover
+                    color: $color_green
+                    opacity: 0.6
+        li.slick-active
+            button:before
+                color: $color_green
+.main-footer
+    position: relative
+    .page-up-btn
+        position: fixed
+        z-index: 1
+        right: 20px
+        bottom: 150px
+        cursor: pointer
+        display: none
+        opacity: 0.8
+        &:hover
+            opacity: 1
+
+.footer-main-block
+    background-color: #f6f5f1
+    color: $color_gray
+    padding: 40px 0 20px 0
+.footer-info-nav
+    padding-bottom: 20px
+    border-bottom: 1.5px solid #eee
+.footer-contacts-nav-block
+    display: grid
+    grid-template-columns: 1fr 6fr
+    margin-bottom: 10px
+
+.footer-contacts-wrapper
+    .footer-logo
+        margin-bottom: 10px
+    .footer-general-info
+        font-size: 16px
+        font-weight: 500
+        margin-bottom: 10px
+        white-space: nowrap
+        letter-spacing: 0.44px
+    .footer-contacts-block
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        .footer-contacts-block__pic
+            margin-right: 5px
+        .footer-contacts-block__number
+            font-size: 18px
+            font-weight: 400
+            letter-spacing: 0.5px
+            white-space: nowrap
+    .footer-worktime-block
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        .footer-worktime-block__pic
+            margin-right: 5px
+        .footer-worktime-block__text
+            font-size: 12px
+            font-weight: 300
+            letter-spacing: 0.33px
+.footer-nav-block
+    display: flex
+    align-items: center
+    justify-content: flex-end
+.footer-nav-wrapper
+    display: flex
+    flex-wrap: wrap
+    margin-left: 5%
+    .footer-nav__item
+        // padding: 6px
+        // flex-basis: 170px
+        padding: 7px 20px
+        a
+            font-size: 16px
+            font-weight: bold
+            letter-spacing: 0.44px
+            font-family: 'Helvetica', sans-serif
+            &:hover
+                color: $color_green
+
+.footer-delivery-block
+    .footer-delivery-block__header
+        font-size: 14px
+        font-weight: 500
+        color: $color_red
+        letter-spacing: 0.33px
+        margin-bottom: 5px
+    .footer-delivery-block__text
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.33px
+        line-height: 1.5
+.footer-social-media-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+
+.telegram-block
+    display: flex
+    align-items: center
+    flex-basis: calc(300px + 30%)
+    margin-right: 30px
+    &__title
+        font-size: 20px
+        font-weight: 500
+        letter-spacing: 0.56px
+        color: #616161
+        margin-right: 30px
+
+    .telegram-form
+        position: relative
+        width: 100%
+        height: 35px
+        #telegram-mail
+            border: none
+            line-height: 35px
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            background-color: #e9e8e2
+            padding-left: 30px
+            width: 100%
+            height: 35px
+            &::placeholder
+                color: $color_gray
+                font-size: 12px
+                font-weight: 300
+        .telegram-btn
+            position: absolute
+            right: -20px
+            top: 0
+            height: 35px
+            background-color: $color_green
+            padding: 11px 25px 7px 20px
+            border-top-right-radius: 20px
+            border-bottom-right-radius: 20px
+            cursor: pointer
+.social-nets
+    justify-self: end
+    display: flex
+    align-items: center
+    .social-nets__title
+        font-size: 12px
+        font-weight: 300
+        color: $color_gray
+        margin-right: 30px
+        white-space: nowrap
+    .social-nets__icons
+        display: flex
+        align-items: center
+        .social-nets__instagram-ico
+            margin-right: 15px
+
+.social-nets__icon_hover
+    cursor: pointer
+    &:hover
+        .instagram-ico-svg, .facebook-ico-svg
+            fill: #fff
+    &:hover
+        // background-color: $color_gray
+
+.copyright-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px
+    .copyright__owner
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.39px
+        color: $color_gray
+    .copyright__performer
+        display: flex
+        align-items: center
+        p
+            font-size: 12px
+            font-weight: 300
+            color: $color_gray
+            letter-spacing: 0.39px
+            margin-right: 10px
+
+.breadcrumbs-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    height: auto
+    background-color: $color_beige
+    width: 100%
+    padding: 5px 5px 5px 20px
+.breadcrumbs__item
+    display: inline-flex
+    align-items: center
+    padding: 3px 5px 0 0
+    .breadcrumbs__arrow-divider
+        margin-left: 5px
+        width: 5px
+        height: 9px
+        display: block
+    .breadcrumbs__page-location-link
+        color: $color_olive
+        font-size: 12px
+        font-weight: 500
+        opacity: 0.5
+        font-weight: 400
+        letter-spacing: 0.29px
+        // white-space: nowrap
+        &:hover
+            opacity: 1
+            text-decoration: underline
+    .breadcrumbs__current
+        font-weight: 500
+        color: $color_green
+        opacity: 1
+        font-size: 12px
+        letter-spacing: 0.29px
+        // white-space: nowrap
+
+.pagination-wrapper
+    display: flex
+    justify-content: center
+
+.pagination-block
+    margin: 30px auto
+    display: inline-flex
+    &__unit
+        border: 1px solid $color_lPink
+        border-radius: 50%
+        margin-right: 5px
+        width: 45px
+        height: 45px
+
+.pagination__link
+    display: block
+    width: 100%
+    height: 100%
+    padding-top: 16px
+    text-align: center
+    border-radius: 50%
+    color: $color_olive
+    opacity: 0.9
+
+.pagination__page
+    &:hover:not(.pagination_active)
+        border-color: $color_green
+
+.pagination_active
+    padding-top: 16px
+    text-align: center
+    background-color: $color_green
+    color: #fff
+
+.pagination__btn-left
+    background-image: url('../img/pagination-left.png')
+    background-repeat: no-repeat
+    background-position: 45% 50%
+
+.pagination__btn-right
+    background-image: url('../img/pagination-right.png')
+    background-repeat: no-repeat
+    background-position: 55% 50%
+
+.pagination__btn_off
+    cursor: default
+
+.pagination__btn-left
+    &:hover:not(.pagination__btn_off)
+        border-color: $color_green
+.pagination__btn-right
+    &:hover:not(.pagination__btn_off)
+        border-color: $color_green

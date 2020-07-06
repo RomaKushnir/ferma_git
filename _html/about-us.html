@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./chunks/head.html', {"title": "Про нас"})
+
+<body>
+  @@include('./chunks/header.html')
+  <main class="center-main-container">
+    <div class="breadcrumbs-block">
+      <ul class="breadcrumbs-wrapper">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+          <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__current">Про нас</span>
+        </li>
+      </ul>
+    </div>
+    <h3 class="page-section-header">Про нас</h3>
+    <section class="page-about-us">
+      <figure class="page-about__pic">
+        <img src="../img/pages/about/main.png" alt="">
+      </figure>
+      <div class="page-about__text">
+        <p class="who-we-are">хто ми</p>
+        <h5 class="page-article-header">Кілька слів про нас</h5>
+        <p class="accented-content"> Протягом нашої більш ніж 10-річної історії «<span>Green</span>ferma»
+          розробила свою
+          технологію та
+          розширив асортимент посадки.
+        </p>
+        <p class="content"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+
+        <p class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+          amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem.
+        </p>
+        <p class="content"> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+          nisi ut aliquid ex
+          ea commodi consequatur?</p>
+      </div>
+    </section>
+    <section class="page-about__statistics">
+      <div class="statistic-wrapper">
+        <p class="statistic-number">14578</p>
+        <p class="statistic-field">Продуктів доступно</p>
+      </div>
+      <div class="statistic-wrapper">
+        <p class="statistic-number">92%</p>
+        <p class="statistic-field">Клієнтів повертається</p>
+      </div>
+      <div class="statistic-wrapper">
+        <p class="statistic-number">253985</p>
+        <p class="statistic-field">Користувачів сайта</p>
+      </div>
+    </section>
+    <section class="page-about__info-galery">
+      <div class="info-galery-article">
+        <p class="info-galery-article__header">But I must explain</p>
+        <p class="info-galery-article__content">Nor again is there anyone who loves or pursues or desires to obtain pain
+          of itself, because it is pain, but
+          because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+      </div>
+      <figure class="info-galery__pic">
+        <img src="../img/pages/about/1.png" alt="">
+      </figure>
+      <div class="info-galery-article">
+        <p class="info-galery-article__header">Et harum quidem rerum</p>
+        <p class="info-galery-article__content">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+          impedit quo minus id quod maxime placeat
+          facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+      </div>
+      <figure class="info-galery__pic position_1024">
+        <img src="../img/pages/about/2.png" alt="">
+      </figure>
+      <div class="info-galery-article">
+        <p class="info-galery-article__header">On the other hand</p>
+        <p class="info-galery-article__content">In a free hour, when our power of choice is untrammelled and when
+          nothing prevents our being able to do what
+          we like best.</p>
+      </div>
+      <figure class="info-galery__pic">
+        <img src="../img/pages/about/3.png" alt="">
+      </figure>
+    </section>
+    <h3 class="page-section-header">Нам довіряють</h3>
+    @@include('./chunks/brands-block.html')
+  </main>
+  @@include('./chunks/footer.html')
+  <script src="js/libs.min.js"></script>    
+  <script src="js/common.js"></script>
+</body>
+
+</html>

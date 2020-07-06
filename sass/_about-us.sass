@@ -1,0 +1,109 @@
+.page-section-header
+    font-weight: 700
+    font-size: 22px
+    color: $color_olive
+    letter-spacing: 1.14px
+    text-transform: uppercase
+    text-align: center
+    padding: 30px 0
+.page-about-us
+    display: flex
+
+.page-about__pic
+    img
+        object-fit: cover
+        width: 100%
+        display: block
+
+.page-about__text
+    flex-basis: 50%
+    margin-left: 4%
+    .who-we-are
+        font-size: 12px
+        font-weight: 700
+        color: $color_green
+        letter-spacing: 0.62px
+    .page-article-header
+        font-size: 42px
+        font-weight: 400
+        color: $color_olive
+        letter-spacing: 1px
+    .accented-content
+        color: $color_olive
+        font-size: 18px
+        font-weight: 500
+        letter-spacing: 0.43px
+        text-indent: 15px
+        padding: 15px 0 5px 0
+        span
+            color: $color_green
+    .content
+        font-size: 16px
+        font-weight: 400
+        color: $color_olive
+        opacity: 0.7
+        line-height: 1.63
+        letter-spacing: 0.38px
+        text-indent: 15px
+        padding: 0.5vw 0
+.page-about__statistics
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+.statistic-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 8vw 0
+    &:hover
+        .statistic-number
+            color: $color_green
+            opacity: 1
+        .statistic-field
+            color: $color_green
+    .statistic-number
+        opacity: 0.5
+        font-size: 58px
+        font-weight: 700
+        letter-spacing: 3.01px
+        color: $color_olive
+        margin-bottom: 10px
+    .statistic-field
+        font-size: 22px
+        font-weight: 300
+        letter-spacing: 1.14px
+        color: $color_olive
+
+.page-about__info-galery
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-auto-rows: 1fr
+.info-galery-article
+    display: grid
+    align-content: center
+    padding: 0 7%
+    &__header
+        font-size: 24px
+        font-weight: 700
+        letter-spacing: 1.25px
+        color: $color_olive
+        margin-bottom: calc(10px + 1vw)
+        text-align: center
+    &__content
+        opacity: 0.7
+        font-size: 14px
+        line-height: 1.71
+        letter-spacing: 0.73px
+        color: $color_olive
+        text-align: justify
+    &:hover
+        background-color: $color_beige
+        .info-galery-article__header
+            color: $color_green
+.info-galery__pic
+    img
+        display: block
+        height: 100%
+        width: 100%
+        object-fit: cover
+    &:hover
+        filter: contrast(115%) brightness(85%)

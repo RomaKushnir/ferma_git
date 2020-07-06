@@ -1,0 +1,66 @@
+//стилізація інпутів
+input[type="checkbox"] + label:before
+    content: "\00a0"
+    display: inline-block
+    font: 13px/1.2em sans-serif
+    height: 17px
+    width: 17px
+    border: 1px solid $color_lPink
+    border-radius: 3px
+    margin: 0 .5em 0 0
+    padding: 0
+    vertical-align: middle
+
+input[type="checkbox"]:checked + label:before
+    background: $color_green
+    color: #fff
+    content: "\2713"
+    text-align: center
+    border-color: $color_green
+    font-weight: bold
+
+input[type="radio"] + label:before
+    content: "\00a0"
+    display: inline-block
+    font: 17px/0.8em sans-serif
+    height: 17px
+    width: 17px
+    border: 1px solid $color_lPink
+    border-radius: 50%
+    margin: 0 .5em 0 0
+    padding: 0
+    vertical-align: middle
+
+input[type="radio"]:checked + label:before
+    content: ""
+    border: 5px solid $color_green
+
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"],textarea
+    border: 1px solid $color_lPink
+    height: 40px
+    width: 100%
+    border-radius: 5px
+    padding-left: 15px
+    &::placeholder
+        color: $color_olive
+        opacity: 0.5
+        font-size: 14px
+        letter-spacing: 0.333333px
+    &:focus
+        border-color: $color_green
+    &:disabled
+        background-color: #f8f8f8
+
+textarea
+
+input[type="submit"]:not(.search-block__search-ico)
+    background-color: $color_green
+    color: #fff
+    border: none
+    padding: 16px 30px
+    border-radius: 30px
+    font-size: 14px
+    font-weight: bold
+    letter-spacing: 0.64px
+    text-transform: uppercase

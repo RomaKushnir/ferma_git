@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./chunks/head.html', {"title": "Відгуки"})
+
+<body>
+    @@include('./chunks/header.html')
+    <main class="center-main-container">
+        <div class="breadcrumbs-block">
+            <ul class="breadcrumbs-wrapper">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+                    <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__current">Відгуки</span>
+                </li>
+            </ul>
+        </div>
+        <h3 class="page-section-header">Відгуки</h3>
+        <section class="page-thin-content-block">
+            <section class="reviews-notation-block">
+                <p class="notation__header">Важливо!</p>
+                <p class="notation__content">Шановні клієнти, звертаємо Вашу увагу що, при оформленні відкликання
+                    всі
+                    дані, які ви
+                    вказуєте повинні бути дійсними і ідентифіковані персонально. Це означає, що зазначені Вами дії,
+                    події,
+                    проблеми мали місце раніше при оформленні та виконанні замовлення на сайті
+                    <span class="color-emphasize">Green</span>ferma.ua
+                </p>
+                <p class="notation__content">В іншому випадку адміністрація сайту залишає за собою право не
+                    модерувати
+                    відгуки, які мають ознаки
+                    анонімних.</p>
+            </section>
+            <section class="reviews-form-block">
+                <form class="reviews-form" action="" method="">
+                    <fieldset>
+                        <legend class="form__block-title">Особисті дані</legend>
+                        <ul class="personal-data-wrapper">
+                            <li class="personal-data-input-wrapper"><label for=""></label><input
+                                    class="personal-data-input" type="text" id="name" name="name"
+                                    placeholder="Як вас звати" required></li>
+                            <li class="personal-data-input-wrapper"><label for=""></label><input
+                                    class="personal-data-input" type="text" id="city" name="city" placeholder="Місто"
+                                    required></li>
+                            <li class="personal-data-input-wrapper"><label for=""></label><input
+                                    class="personal-data-input" type="email" id="email" name="email" placeholder="Email"
+                                    required></li>
+                            <li class="personal-data-input-wrapper"><label for=""></label><input
+                                    class="personal-data-input" type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон" required></li>
+                        </ul>
+                    </fieldset>
+                    <div>
+                        <textarea class="personal-data-textarea" placeholder="Ваше звернення" required></textarea>
+                    </div>
+                    <div class="personal-data-submit-wrapper review-submit-btn-wrapper">
+                        <input class="personal-data-submit" type="submit" value="Відправити">
+                    </div>
+                </form>
+            </section>
+            <ul class="displayed-person-comments-block">
+                <li class="person-comments-wrapper">
+                    <div class="person-comment-block">
+                        <div class="comment__header">
+                            <p class="comment__person-name">АЛІНА </p>
+                            <p class="comment__published-date">01.09.2019 <span
+                                    class="comment__published-time">08:39</span>
+                            </p>
+                        </div>
+                        <p class="comment__person-content">
+                            Відкрила для себе абсолютно випадково мега круту доставку продуктів. Greenferma - це
+                            суцільні
+                            переваги: ​​економія часу і сил, уважні і компетентні працівники, ціни не є захмарними
+                            місцями
+                            навіть значно дешевше, доставка за власним вибором - можна підлаштуватися навіть із
+                            зайнятістю
+                            президента)
+                        </p>
+                    </div>
+                </li>
+                <li class="person-comments-wrapper">
+                    <div class="person-comment-block">
+                        <div class="comment__header">
+                            <p class="comment__person-name">Олена</p>
+                            <p class="comment__published-date">01.09.2019 <span
+                                    class="comment__published-time">08:39</span>
+                            </p>
+                        </div>
+                        <p class="comment__person-content">
+                            Замовляю продукти вдруге, так як з першим (пробним) замовленням все пройшло добре, за
+                            винятком того, що деякі продукти (овочі), набираються на вагу, були набрані в плюс, що
+                            позначилося на підсумковій ціні. Але при повторному замовленні моє зауваження було
+                            враховано. Здивувало якість м'ясної продукції, особливо свинячі реберця, замовляла всього
+                            600 гр, реберця виявилися дуже м'ясистими, з тонкою кісточкою і не жирні. Збиранням дуже
+                            задоволена, Дякую!
+                        </p>
+                    </div>
+
+                </li>
+                <li class="person-comments-wrapper">
+                    <div class="person-comment-block">
+                        <div class="comment__header">
+                            <p class="comment__person-name">Катерина</p>
+                            <p class="comment__published-date">01.09.2019 <span
+                                    class="comment__published-time">08:39</span>
+                            </p>
+                        </div>
+                        <p class="comment__person-content">
+                            Робили замовлення для фуршету на роботі. Швидко зробили рахунок для оплати по безналу. Чітко
+                            все привезли. Рекомендую!
+                        </p>
+                    </div>
+                    <div class="comment-reply-wrapper">
+                        <div class="reply-ico-wrapper">
+                            <img class="reply-ico" src="/img/reply-ico.png" alt="">
+                        </div>
+                        <div class="reply-block">
+                            <div class="reply__header">
+                                <p class="reply__name">Команда <span class="color-emphasize">Green</span>ferma
+                                </p>
+                                <p class="reply__published-date"> 14.02.2019 <span
+                                        class="reply__published-time">13:04</span>
+                                </p>
+                            </div>
+                            <div class="reply__content">
+                                Спасибо за отзыв! Приятных покупок! С уважением, команда <span
+                                    class="color-emphasize">Green</span>ferma
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="person-comments-wrapper">
+                    <div class="person-comment-block">
+                        <div class="comment__header">
+                            <p class="comment__person-name">Євген</p>
+                            <p class="comment__published-date">01.09.2019 <span
+                                    class="comment__published-time">08:39</span>
+                            </p>
+                        </div>
+                        <p class="comment__person-content">
+                            Добрий день. У мене не відгук, а пропозиція. Я живу за кордоном, але до цього прожив 54 роки
+                            в Харкові, де у мене залишилося багато друзів. Завтра у мого друга день народження, я хотів
+                            йому подарувати квіти, алкоголь і торти, але довелося зробити це через іншу компанію, тому
+                            що у вас немає квітів, а вибір всього іншого набагато краще, ніж в іншій компанії. Може бути
+                            вам має сенс зробити не великий відділ квітів, просто букет, без кошиків та інших квіткових
+                            викрутасів. Думаю, що це додало б вам клієнтів, я, наприклад, буду замовляти ще подарунки на
+                            день народження 23 грудня, 26 січня, 11 лютого і кілька на 8 березня і все це, на жаль, не з
+                            вами оскільки кожен подарунок вимагає квітів. З повагою, Євген.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        @@include('./chunks/pagination.html')
+
+    </main>
+    @@include('./chunks/footer.html')
+    <script src="js/libs.min.js"></script>    
+    <script src="js/common.js"></script>
+</body>
+
+</html>

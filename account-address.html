@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адрес</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>ЕКО-ферма</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="center-main-container">
+	<div class="header-info">
+		<div class="purchase-info">
+			<a href="/pay-delivery.html" class="">Оплата і доставка</a>
+			<a href="/our-shops.html" class="">Наші магазини</a>
+		</div>
+		<div class="cabinet-lang">
+			<div class="cabinet-management-block">
+				<span class="cabinet-register-btn" data-tab-bind="1">Реєстрація</span>
+				<span class="text-opacity">або</span>
+				<span class="text-opacity cabinet-entrance-btn" data-tab-bind="0">Вхід</span>
+				<div class="user-cabinet-popup-container">
+					<div class="user-cabinet-popup-window">
+						<ul class="user-cabinet-popup__tabs-block tabs-caption">
+							<li class="user__tab user__tab_active">Вхід</li>
+							<li class="user__tab">Реєстрація</li>
+						</ul>
+						<div class="switch-forms-wrapper">
+							<div class="cabinet-entrance-form-wrapper tab-form tab-form_active">
+								<form class="cabinet-entrance-form " action="">
+									<label for="user-login">Email</label>
+									<div class="required-input-wrapper user-login-input-wrapper">
+										<input type="email" name="login" id="user-login">
+									</div>
+									<p class="user-login-pattern">Пример: name@mail.com</p>
+									<div class="user-password-label-wrapper">
+										<label for="user-password">Пароль</label>
+										<p class="user-password-hint"><a href="#" class="user-password-hint-link">Забули пароль</a></p>
+									</div>																		
+									<div class="user-password-input-wrapper">
+										<input type="password" name="password" id="user-password" >
+										<span class="user-password-show-ico"></span>
+									</div>
+									<button class="user-login-btn submit-btn" type="submit">Війти у систему</button>
+								</form>
+								<p class="existed-accounts-header">Увійти за допомогою соціальних мереж</p>
+								<div class="existed-accounts-wrapper">
+									<p class="existed-account facebook-account-login-btn"></p>
+									<p class="existed-account google-account-login-btn"></p>
+								</div>
+							</div>
+							<div class="cabinet-register-form-wrapper tab-form">								
+								<form class="cabinet-register-form" action="">
+									<label class="user-register-label" for="user-register-email">Ваш E-mail</label>
+									<div class="required-input-wrapper user-register-input-wrapper user-input-wrapper">
+										<input type="email" name="signup-email" id="user-register-email">
+									</div>
+									<div class="register-business-block">
+										<label class="user-register-label" for="user-register-company-name">Назва компанії</label>
+										<div class=" user-input-wrapper">
+											<input type="text" name="signup-company-name" id="user-register-company-name">
+										</div>
+										<label class="user-register-label" for="user-register-company-field">Напрямок</label>
+										<div class=" user-input-wrapper">
+											<input type="text" name="signup-company-field" id="user-register-company-field">
+										</div>
+									</div>
+									<div class="register-client-switch-btn-wrapper">										
+										<p class="client-switch-btn client-switch-btn_active  user-register-client__business">Для бізнеса</p>
+										<p class="client-switch-btn user-register-client__ordinary">Звичайний</p>
+									</div>
+									<div class="user-register-agreement-block">
+										<input type="checkbox" name="register-agreement" id="user-register-agreement">
+										<label class="user-register-label" for="user-register-agreement">Я згоден з
+											<a class="user-register-agreement-link" href="#">договором для користувача</a>
+										</label>
+									</div>
+									<button class="user-register-btn submit-btn" type="submit">продовжити</button>									
+								</form>
+								<p class="user-register-login-cross-btn">У мене вже є аккаунт</p>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="lang-block">
+				<span class="active-language">Українська</span>
+				<img class="lang-block__btn" src="img/angle.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="call-logo-cabinet">
+		<div class="phone-logistic-block">
+			<div class="phone-ico-wrapper">
+				<img class="phone-ico" src="img/phone.png" alt="">
+			</div>
+			<div class="phone-number-wrapper">
+				<p class="call-us">Зателефонуйте нам</p>
+				<p class="phone-number">+38 (096) 888 71 33</p>
+			</div>
+			<div class="logistic-offer-wrapper">
+				<p class="free-delivery">Безкоштовна доставка</p>
+				<p class="delivery-offer">при замовлені товару на суму 150 грн м. Вінниця / 300 грн Україна</p>
+			</div>
+		</div>
+		<div class="logo-wrapper mobile-logo-header">
+			<div class="mobile-menu-block">
+				<div class="mobile-menu-btn-wrapper">
+					<img src="img/menu-mobile.png" alt="">
+				</div>
+			</div>			
+			<div class="logo-block mobile-logo-container">
+				<figure class="logo-img-wrapper">
+					<a href="/"><img src="img/logo.png" alt=""></a>
+				</figure>
+			</div>
+			<div class="mobile-basket-block cabinet-ico-wrapper cabinet-basket-ico-wrapper">
+				<a href="/mobile-basket.html" class="mobile-basket-link">
+					<svg class="cabinet__basket-ico cabinet__ico" viewBox="0 0 36 30">
+						<path d="M14.0003263,24 C12.3433637,24 11,25.3428009 11,26.9993111 C11,28.6571266 12.3433637,30 14.0003263,30 C15.6566363,30 17,28.6571266 17,26.9993111 C17,25.3429459 15.6566363,24 14.0003263,24 Z" id="Path"></path>
+						<path d="M27.0003263,24 C25.3433637,24 24,25.3428009 24,26.9993111 C24,28.6571266 25.3433637,30 27.0003263,30 C28.6566363,30 30,28.6571266 30,26.9993111 C30,25.3429459 28.6566363,24 27.0003263,24 Z" id="Path-Copy-170"></path>
+						<path d="M34.1220711,7.44464787 L17.4670375,7.44334977 C16.6342567,7.44334977 15.9591666,7.6074436 15.9591666,8.34673445 C15.9591666,9.0860253 16.6342567,9.20121054 17.4670375,9.20121054 L34.4228383,9.20121054 L32.9511023,13.2552015 L16.5362117,13.2552015 C15.7636731,13.2552015 14.9389264,13.2552015 14.9389264,14.1479616 C14.9389264,15.0407216 15.7636731,15 16.5362117,15 L32.2848261,15 L30.4396687,20.0745128 L11.3467866,20.0745128 L10,10.5 L9.07542045,3 C8.98836361,2.35279637 8.64623579,1.87447996 7.77456193,1.66984341 L1.84993446,0.190462955 C0.945793265,-0.0265241384 0.2915695,-0.135106808 0.0609197535,0.714941498 C-0.169729993,1.5649898 0.368144796,1.91120369 1.27228599,2.12798582 L7.27957099,3.56880472 L9.6189146,20.0745128 C9.6189146,20.0745128 9.69848658,22 11.5584363,22 L30.2204279,22 C31.7841081,22 32.086409,20.4670162 32.086409,20.4670162 L35.7849438,10.1397014 C35.7849438,10.1383349 36.8815838,7.44464787 34.1220711,7.44464787 Z" id="Path"></path>
+					</svg>
+				</a>
+				<span class="basket-block__added-quantity">1</span>
+			</div>
+		</div>
+		<div class="cabinet-block">
+			<div class="cabinet-wrapper">
+				<div class="catalog-btn-sticky-wrapper">
+					<div class="catalog-btn catalog-btn-sticky">
+						<div class="catalog-btn-ico">
+							<p class="catalog-btn-ico__line"></p>
+							<p class="catalog-btn-ico__line"></p>
+							<p class="catalog-btn-ico__line"></p>
+						</div>
+						<p>Каталог товарів</p>
+					</div>
+				</div>
+				<div class="cabitet__search-block">
+					<form class="search-block__form" action="">
+						<input class="search-block__input" type="text" placeholder="Введіть назву товара">
+						<input class="search-block__search-ico" type="submit" value="">
+					</form>
+				</div>
+				<div class="cabinet__favorite-block cabinet-ico-block ">
+					<div class="cabinet-ico-wrapper">
+						<svg class="cabinet__favorite-ico cabinet__ico" viewBox="0 0 33 30">
+							<path  d="M32.945 8.946C32.464 3.762 28.711 0 24.015 0a8.917 8.917 0 0 0-7.606 4.284C14.81 1.613 12.064 0 8.985 0 4.29 0 .536 3.761.055 8.945c-.038.23-.194 1.434.28 3.4.685 2.834 2.265 5.412 4.57 7.454L16.4 30l11.694-10.2c2.305-2.043 3.885-4.62 4.57-7.456.474-1.964.318-3.17.28-3.398z" opacity=".5"/>
+						</svg>
+					</div>					
+				</div>
+				<div class="cabinet__avatar-block cabinet-ico-block">
+					<div class="cabinet-ico-wrapper">
+						<svg class="cabinet__avatar-ico cabinet__ico" viewBox="0 0 26 30">
+							<path d="M13.397 16h.2c1.826-.03 3.304-.664 4.395-1.875 2.4-2.67 2-7.244 1.957-7.68-.156-3.278-1.727-4.846-3.023-5.578C15.959.32 14.83.025 13.572 0H13.466c-.692 0-2.051.11-3.354.842-1.31.732-2.905 2.3-3.061 5.602-.044.437-.443 5.012 1.957 7.68 1.085 1.212 2.563 1.845 4.39 1.876zM8.715 6.598c0-.018.007-.037.007-.05.205-4.408 3.378-4.882 4.737-4.882H13.534c1.683.037 4.545.714 4.738 4.883 0 .018 0 .037.006.049.007.043.443 4.224-1.54 6.426-.785.873-1.832 1.303-3.21 1.316h-.062c-1.372-.013-2.425-.443-3.205-1.316-1.976-2.19-1.552-6.39-1.546-6.426z"/>
+							<path d="M25.998 23.784v-.019c0-.05-.006-.1-.006-.156-.038-1.24-.12-4.138-2.868-5.064l-.063-.019c-2.855-.72-5.228-2.347-5.254-2.366a.86.86 0 0 0-1.19.207.838.838 0 0 0 .21 1.176c.107.075 2.626 1.81 5.778 2.61 1.475.52 1.64 2.079 1.684 3.506 0 .056 0 .106.007.156.006.564-.032 1.434-.133 1.935-1.026.576-5.045 2.566-11.16 2.566-6.09 0-10.134-1.997-11.166-2.573-.1-.5-.145-1.37-.133-1.934 0-.05.007-.1.007-.156.044-1.427.209-2.986 1.683-3.506 3.153-.8 5.672-2.541 5.78-2.61a.838.838 0 0 0 .208-1.177.86.86 0 0 0-1.19-.206c-.025.019-2.386 1.646-5.253 2.366a.804.804 0 0 0-.064.019C.128 19.47.046 22.369.008 23.603c0 .056 0 .106-.006.156v.019c-.007.325-.013 1.997.323 2.836.063.162.177.3.329.394.19.125 4.74 2.992 12.355 2.992s12.166-2.873 12.356-2.992a.84.84 0 0 0 .33-.394c.316-.833.31-2.504.303-2.83z"/>
+						</svg>
+					</div>
+					<div class="person-cabinet__dropdown-block">
+						<p class="person-cabinet__greetings">Привіт, <span class="user-name">Василь</span></p>
+						<nav class="person-cabinet__options">
+							<div class="person-cabinet__option user-order">
+								<div class="person-cabinet__img-wrapper">								
+									<svg class="person-cabinet__img"  viewBox="0 0 14 14">
+										<path id="Path" d="M4.63564 7.47774H3.36416C3.16314 7.47774 3 7.64068 3 7.8418V9.11334C3 9.31473 3.16314 9.47774 3.36416 9.47774H4.63564C4.83689 9.47774 5 9.31473 5 9.11334V7.8418C5 7.64068 4.83689 7.47774 4.63564 7.47774Z"/>
+										<path id="Path_2" d="M8 7.8418C8 7.64068 7.83684 7.47774 7.63597 7.47774H6.3642C6.16316 7.47774 6 7.64068 6 7.8418V9.11334C6 9.31473 6.16316 9.47774 6.3642 9.47774H7.63597C7.83684 9.47774 8 9.31473 8 9.11334V7.8418Z" />
+										<path id="Path_3" d="M11 7.8418C11 7.64068 10.8369 7.47774 10.6358 7.47774H9.36436C9.16311 7.47774 9 7.64068 9 7.8418V9.11334C9 9.31473 9.16311 9.47774 9.36436 9.47774H10.6358C10.8369 9.47774 11 9.31473 11 9.11334V7.8418Z"/>
+										<path id="Path_4" d="M5 10.3643C5 10.1628 4.83689 10 4.63564 10H3.36416C3.16314 10 3 10.1628 3 10.3643V11.6357C3 11.837 3.16314 12 3.36416 12H4.63564C4.83689 12 5 11.837 5 11.6357V10.3643Z" />
+										<path id="Path_5" d="M8 10.3643C8 10.1628 7.83684 10 7.63597 10H6.3642C6.16316 10 6 10.1628 6 10.3643V11.6357C6 11.837 6.16316 12 6.3642 12H7.63597C7.83684 12 8 11.837 8 11.6357V10.3643Z" />
+										<path id="Path_6" d="M11 10.3643C11 10.1628 10.8369 10 10.636 10H9.36436C9.16311 10 9 10.1628 9 10.3643V11.6357C9 11.837 9.16311 12 9.36436 12H10.636C10.8369 12 11 11.837 11 11.6357V10.3643Z" />
+										<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M12.7539 3.63854V2.00586C13.4379 2.0253 14 2.5589 14 3.21476V12.783C14 13.4501 13.4244 14 12.7167 14H1.28333C0.574512 14 0 13.4512 0 12.783V3.21476C0 2.5589 0.562106 2.0253 1.24617 2.00586V3.63854C1.24617 4.37649 1.88118 4.97117 2.66385 4.97117H3.55838C4.34102 4.97117 4.98446 4.37649 4.98446 3.63854V2H9.01554V3.63854C9.01554 4.37649 9.65901 4.97117 10.4418 4.97117H11.3361C12.1188 4.97117 12.7539 4.37649 12.7539 3.63854ZM11.7837 12.7102C12.0901 12.7102 12.3385 12.476 12.3385 12.1872L12.3384 7.24483C12.3384 6.95596 12.0901 6.72169 11.7836 6.72169H2.19191C1.88544 6.72169 1.6371 6.95596 1.6371 7.24483V12.1872C1.6371 12.476 1.88547 12.7102 2.19191 12.7102H11.7837Z" />
+										<path id="Path_7" d="M2.59005 4H3.54276C3.83194 4 4.06641 3.77184 4.06641 3.49003V0.510154C4.06641 0.228312 3.83194 0 3.54276 0H2.59005C2.30084 0 2.06641 0.228312 2.06641 0.510154V3.49003C2.06641 3.77184 2.30084 4 2.59005 4Z" />
+										<path id="Path_8" d="M10.3752 4H11.3281C11.6171 4 11.8516 3.77184 11.8516 3.49003V0.510154C11.8516 0.228312 11.6171 0 11.3281 0H10.3752C10.0861 0 9.85156 0.228312 9.85156 0.510154V3.49003C9.85156 3.77184 10.0861 4 10.3752 4Z" />
+									</svg>
+								</div>
+								<a class="person-cabinet__option-link" href="/account-order.html">Замовлення</a>
+							</div>
+							<div class="person-cabinet__option user-address">
+								<div class="person-cabinet__img-wrapper">
+									<svg class="person-cabinet__img" width="10" height="14" viewBox="0 0 10 14">
+										<path d="M0 5.15429C0 2.31222 2.24304 0 4.99979 0C7.75668 0 9.99972 2.31222 10 5.15429C10 5.89561 9.85295 6.60341 9.56273 7.25819C8.31223 10.0783 5.91547 13.0554 5.21078 13.9004C5.15796 13.9636 5.08096 14 4.99993 14C4.9189 14 4.8419 13.9636 4.78908 13.9004C4.08412 13.0552 1.68735 10.078 0.437266 7.25819C0.147192 6.60341 0 5.89561 0 5.15429ZM2.4026 5.15415C2.4026 6.63034 3.56777 7.83144 4.99979 7.83144C6.43196 7.83144 7.59712 6.63034 7.59698 5.15415C7.59698 3.67781 6.43182 2.47671 4.99979 2.47671C3.56777 2.47671 2.4026 3.67781 2.4026 5.15415Z"/>
+									</svg>
+								</div>
+								<a class="person-cabinet__option-link" href="/account-address.html">Адрес</a>
+							</div>
+							<div class="person-cabinet__option user-settings">
+								<div class="person-cabinet__img-wrapper">
+									<svg class="person-cabinet__img" width="14" height="13" viewBox="0 0 14 13">
+										<path  fill-rule="evenodd" clip-rule="evenodd" d="M11.7225 4.21299L12.076 5.00946C12.076 5.00946 14.0006 5.65771 14 5.75673V7.18361C14 7.27956 12.0786 7.98254 12.0786 7.98254L11.7258 8.77778C11.7258 8.77778 12.5928 10.5005 12.5169 10.5712L11.4288 11.5805C11.3555 11.6475 9.46454 10.8837 9.46454 10.8837L8.60725 11.2127C8.60725 11.2127 7.9069 13 7.80055 13H6.2643C6.1599 13 5.40377 11.2176 5.40377 11.2176L4.54713 10.8886C4.54713 10.8886 2.69054 11.6918 2.61661 11.6236L1.52846 10.613C1.45648 10.5454 2.27875 8.78701 2.27875 8.78701L1.92533 7.993C1.92533 7.993 0 7.34291 0 7.24327V5.81516C0 5.72044 1.92079 5.01869 1.92079 5.01869L2.27421 4.22345C2.27421 4.22345 1.40914 2.4995 1.48437 2.43L2.57122 1.42073C2.64385 1.35246 4.5387 2.11634 4.5387 2.11634L5.39339 1.78729C5.39339 1.78729 6.0931 0 6.2001 0H7.73635C7.8401 0 8.59623 1.7836 8.59623 1.7836L9.45222 2.11142C9.45222 2.11142 11.3082 1.30818 11.3834 1.37768L12.4722 2.38572C12.5448 2.45338 11.7225 4.21299 11.7225 4.21299ZM7.00032 8.58282C8.23762 8.58282 9.24471 7.64796 9.24471 6.49969C9.24471 5.35142 8.23827 4.41841 7.00032 4.4178C5.76432 4.4178 4.75594 5.35142 4.75594 6.49969C4.75594 7.64796 5.76432 8.58282 7.00032 8.58282Z"/>
+									</svg>
+								</div>
+								<a class="person-cabinet__option-link" href="/account-settings.html">Налаштування</a>
+							</div>
+							<div class="person-cabinet__option user-product-replacement">
+								<div class="person-cabinet__img-wrapper">
+										<svg class="person-cabinet__img" width="12" height="13" viewBox="0 0 12 13">
+											<path d="M12 6.68008C12 4.23724 10.3891 2.02659 7.89607 1.04823C7.57219 0.921145 7.19508 1.05386 7.05366 1.34465C6.91223 1.63541 7.06001 1.97411 7.38368 2.10116C9.41069 2.89662 10.7205 4.69392 10.7205 6.68008C10.7205 8.25354 9.89652 9.70945 8.54563 10.6418L8.98019 8.67989C9.04911 8.36868 8.82409 8.06617 8.47756 8.00427C8.13086 7.94241 7.79423 8.14446 7.72526 8.45566L7.01254 11.6732C6.97949 11.8227 7.01378 11.9778 7.10808 12.1046C7.20233 12.2313 7.34879 12.3191 7.51517 12.3489L11.098 12.9889C11.1401 12.9964 11.1821 13 11.2235 13C11.5225 13 11.7897 12.8108 11.8503 12.5374C11.9192 12.2262 11.6942 11.9238 11.3476 11.8618L9.38545 11.5114C11.0113 10.3632 12 8.59198 12 6.68008Z"/>
+											<path d="M3.52272 4.99566C3.56486 5.00317 3.60687 5.00681 3.64824 5.00681C3.94721 5.00681 4.2144 4.81763 4.27496 4.54423L4.98759 1.32667C5.05651 1.01546 4.83149 0.712989 4.48497 0.651093L0.902325 0.0111036C0.555802 -0.0506394 0.219003 0.151328 0.150039 0.462494C0.0811184 0.773736 0.306134 1.07617 0.652658 1.1381L2.61635 1.48884C0.990608 2.63821 0 4.41224 0 6.31999C0 8.7629 1.6109 10.9735 4.1039 11.9518C4.18732 11.9845 4.2742 12 4.35971 12C4.60622 12 4.84122 11.8712 4.94626 11.6554C5.08768 11.3646 4.93995 11.0259 4.6162 10.8989C2.58926 10.1034 1.27951 8.30615 1.27951 6.31999C1.27951 4.75041 2.10439 3.2921 3.45453 2.35883L3.0201 4.32009C2.95118 4.63129 3.1762 4.93373 3.52272 4.99566Z"/>
+										</svg>
+											
+								</div>
+								<a class="person-cabinet__option-link" href="/account-replacement.html">Заміна товару</a>
+							</div>
+						</nav>
+						<div class="person-cabinet__option user-logout">
+							<div class="person-cabinet__img-wrapper">
+								<svg class="person-cabinet__img" width="14" height="14" viewBox="0 0 14 14">
+									<path  d="M8.43753 7.5833C8.12648 7.5833 7.87506 7.84467 7.87506 8.1666V10.5C7.87506 10.8214 7.62303 11.0833 7.31249 11.0833H5.62499V2.3333C5.62499 1.83513 5.31898 1.39005 4.85889 1.22438L4.69235 1.1666H7.31249C7.62303 1.1666 7.87506 1.4285 7.87506 1.75V3.5C7.87506 3.82193 8.12648 4.0833 8.43753 4.0833C8.74858 4.0833 9 3.82193 9 3.5V1.75C9 0.785172 8.24287 0 7.31249 0H1.26563C1.24421 0 1.22628 0.00993349 1.20548 0.0128174C1.17839 0.0104675 1.15254 0 1.12504 0C0.504583 0 0 0.523163 0 1.1666V11.6666C0 12.1648 0.306005 12.6098 0.766093 12.7755L4.1513 13.9457C4.26604 13.9825 4.38016 14 4.50005 14C5.12051 14 5.62499 13.4767 5.62499 12.8333V12.25H7.31249C8.24287 12.25 9 11.4648 9 10.5V8.1666C9 7.84467 8.74858 7.5833 8.43753 7.5833Z" />
+									<path  d="M13.8401 5.57583L11.6583 3.17596C11.5023 3.00436 11.2677 2.95272 11.0638 3.04566C10.8604 3.13871 10.7272 3.35766 10.7272 3.60012V5.40006H8.54551C8.24439 5.40006 8 5.66877 8 6C8 6.33122 8.24439 6.59994 8.54551 6.59994H10.7272V8.39987C10.7272 8.64233 10.8604 8.86128 11.0638 8.95433C11.2677 9.04727 11.5023 8.99564 11.6583 8.82415L13.8401 6.42416C14.0533 6.18962 14.0533 5.81038 13.8401 5.57583Z"/>
+								</svg>
+							</div>
+							<a class="person-cabinet__option-link" href="/">Вийти</a>
+						</div>
+					</div>
+				</div>
+				<div class="cabinet__basket-block cabinet-ico-block">
+					<div class="cabinet-ico-wrapper cabinet-basket-ico-wrapper">
+						<svg class="cabinet__basket-ico cabinet__ico" viewBox="0 0 36 30">
+							<path d="M14.0003263,24 C12.3433637,24 11,25.3428009 11,26.9993111 C11,28.6571266 12.3433637,30 14.0003263,30 C15.6566363,30 17,28.6571266 17,26.9993111 C17,25.3429459 15.6566363,24 14.0003263,24 Z" id="Path"></path>
+							<path d="M27.0003263,24 C25.3433637,24 24,25.3428009 24,26.9993111 C24,28.6571266 25.3433637,30 27.0003263,30 C28.6566363,30 30,28.6571266 30,26.9993111 C30,25.3429459 28.6566363,24 27.0003263,24 Z" id="Path-Copy-170"></path>
+							<path d="M34.1220711,7.44464787 L17.4670375,7.44334977 C16.6342567,7.44334977 15.9591666,7.6074436 15.9591666,8.34673445 C15.9591666,9.0860253 16.6342567,9.20121054 17.4670375,9.20121054 L34.4228383,9.20121054 L32.9511023,13.2552015 L16.5362117,13.2552015 C15.7636731,13.2552015 14.9389264,13.2552015 14.9389264,14.1479616 C14.9389264,15.0407216 15.7636731,15 16.5362117,15 L32.2848261,15 L30.4396687,20.0745128 L11.3467866,20.0745128 L10,10.5 L9.07542045,3 C8.98836361,2.35279637 8.64623579,1.87447996 7.77456193,1.66984341 L1.84993446,0.190462955 C0.945793265,-0.0265241384 0.2915695,-0.135106808 0.0609197535,0.714941498 C-0.169729993,1.5649898 0.368144796,1.91120369 1.27228599,2.12798582 L7.27957099,3.56880472 L9.6189146,20.0745128 C9.6189146,20.0745128 9.69848658,22 11.5584363,22 L30.2204279,22 C31.7841081,22 32.086409,20.4670162 32.086409,20.4670162 L35.7849438,10.1397014 C35.7849438,10.1383349 36.8815838,7.44464787 34.1220711,7.44464787 Z" id="Path"></path>
+						</svg>
+						<span class="basket-block__added-quantity">1</span>
+					</div>					
+					<div class="basket-popup-container">
+						<div class="basket-popup-window">
+							<div class="basket-top-position-wrapper">
+								<header class="basket-popup-header-wrapper">
+									<p class="basket-popup-title">Кошик</p>
+									<div class="close-btn basket-popup__close-btn">
+										<p class="cross-line"></p>
+										<p class="cross-line"></p>
+									</div>
+								</header>
+								<div class="basket-popup-main-wrapper">
+									<div class="basket-control-btns-wrapper">
+										<p class="basket-remove-all-btn">Видалити усі товари</p>
+									</div>
+									<section class="basket-products-wrapper">
+										<article class="basket-no-product-plug">
+											<p>В корзині на даний момент немає товарів</p>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/1.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/2.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/3.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/3.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/3.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+										<article class="basket-product-item">
+											<div class="product-pic-wrapper"><img src="/img/goods/3.png" alt="" class="product-pic"></div>
+											<div class="product-basket-units-wrapper">
+												<div class="product-title-wrapper">
+													<p class="product-title">Десерт Ама Горіх <span class="product-weight">125 г</span></p>
+													<p class="product-additional-info">
+														<span class="product-additional__price">23.20 грн</span>
+														<span class="product-additional__weight">125 г</span>
+													</p>
+												</div>
+												<div class="product-quantity-wrapper">
+													<div class="goods-quantity">
+														<p class="goods-quantity__remove-btn">-</p>
+														<p class="goods-quantity__selected-qty">11</p>
+														<p class="goods-quantity__add-btn">+</p>
+													</div>
+												</div>
+												<div class="product-price-wrapper">
+													<div class="price-block">												
+														<p class="current-price">23.20</p>
+														<p class="price-text">грн</p>
+													</div>										
+												</div>
+											</div>
+											<div class="product-close-btn-wrapper">
+												<div class="close-btn basket-product__close-btn">
+													<p class="cross-line"></p>
+													<p class="cross-line"></p>
+												</div>
+											</div>
+										</article>
+									</section>
+								</div>
+							</div>							
+							<footer class="basket-popup-footer-wrapper">
+								<div class="basket-summary-info-wrapper">
+									<div class="basket-summary-info__units-wrapper">
+										<div class="basket-order-pic-wrapper">
+											<img src="img/order-basket.png" alt="" class="order-basket__pic">
+										</div>
+										<p class="basket-products__title">Товари</p>
+									</div>
+									<p class="basket-summary-price-wrapper">
+										<span class="basket-products__price">222.20</span>
+										<span class="basket__price-currency">грн</span>
+									</p>									
+								</div>
+								<div class="basket-summary-info-wrapper">
+									<div class="basket-summary-info__units-wrapper">
+										<div class="basket-order-pic-wrapper">
+											<img src="img/order-weight.png" alt="" class="order-weight__pic">
+										</div>
+										<p class="basket-product-weight-wrapper">
+											<span class="basket-products__title">Доплата за вагу</span>
+											<span class="basket-summary__weight">50.12</span>
+											<span class="basket__weight-measure">кг</span>
+										</p>
+									</div>
+									<p class="basket-summary-weight-wrapper">
+										<span class="basket-additional__price">0</span>
+										<span class="basket__price-currency">грн</span>
+									</p>									
+								</div>
+								<div class="basket-summary-info-wrapper basket-btn-price-wrapper">
+									<p class="basket-submit-link-wrapper"><a class="submit-btn basket-submit-link" href="/make-order.html">Замовити</a></p>
+									<p class="basket-overall-price-wrapper">
+										<span class="basket-overall-price__title">Всього:</span>
+										<span class="basket-overall__price">222.20</span>
+										<span class="basket__price-currency">грн</span>
+									</p>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="basket-sum-info">
+				<span class="basket-sum-title">Загальна сума покупок - </span><span class="basket-sum">277.58
+					грн.</span>
+			</div>
+		</div>
+	</div>
+	<nav class="header-menu-block">
+		<div class="header-menu-catalog-block">
+			<div class="catalog-menu-btn-wrapper">
+				<div class="catalog-btn-substrate header-menu-catalog-btn">
+					<div class="catalog-btn catalog-btn-menu">						
+						<div class="catalog-btn-ico">
+							<p class="catalog-btn-ico__line"></p>
+							<p class="catalog-btn-ico__line"></p>
+							<p class="catalog-btn-ico__line"></p>
+						</div>
+						<p>Каталог товарів</p>
+					</div>				</div>
+				<div class="catalog-btn-hover-modal-background"></div>
+				<nav class="catalog-menu-wrapper">
+					<ul class="catalog-menu">
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/fish.png" alt=""></div>
+								<a class="catalog-link" href="">Риба, ікра, морепродукти</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/milk.png" alt=""></div>
+								<a class="catalog-link" href="">Молоко, сир, яйца</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/chicken.png" alt=""></div>
+								<a class="catalog-link" href="">Птахи, м'ясо, делікатеси</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/drinks.png" alt=""></div>
+								<a class="catalog-link" href="">Вода, соки, напої</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/tea.png" alt=""></div>
+								<a class="catalog-link" href="">Чай, кава, цукор</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/sauce.png" alt=""></div>
+								<a class="catalog-link" href="">Соуси, горіхи, консерви</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/bread.png" alt=""></div>
+								<a class="catalog-link" href="">Хліб, солодощі, снеки</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/groats.png" alt=""></div>
+								<a class="catalog-link" href="">Макарони, крупи, спеції</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/freeze.png" alt=""></div>
+								<a class="catalog-link" href="">Заморожені продукти</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари3</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="catalog-list__unit">
+							<div class="ico-title-wrapper">
+								<div class="catalog-pic"><img src="img/category-ico/vegetables.png" alt=""></div>
+								<a class="catalog-link" href="">Овочі, фрукти, гриби,
+									ягоди</a>
+							</div>
+							<div class="catalog-arrow"></div>
+							<div class="catalog-drop-out">
+								<ul class="catalog-drop-out-menu">
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари2</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+									<li class="drop-out-sub-category__unit catalog-list__unit"><a class="sub-category-link " href="/products-catalog.html">товари</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<ul class="header-menu-wrapper">
+			<li><a href="/">Головна</a></li>
+			<li><a href="/about-us.html">Про нас</a></li>
+			<li><a href="/reviews.html">Відгуки</a></li>
+			<li><a href="/blog-news.html">Блог/Новини</a></li>
+			<li><a href="/contacts.html">Контакти</a></li>
+		</ul>
+	</nav>
+</header>
+    <input type="checkbox">
+    <main class="center-main-container">
+        <div class="breadcrumbs-block">
+            <ul class="breadcrumbs-wrapper">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+                    <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__current">Адрес</span>
+                </li>
+            </ul>
+        </div>
+        <div class="user-cabinet-nav-orders-wrapper">
+            <section class="user-cabinet-nav-block">
+                <header class="user-cabinet-heading">Привіт, <span class="user-name">Василь</span></header>
+                <nav class="person-cabinet__options user-cabinet">
+                    <div class="person-cabinet__option  user-cabinet">
+                        <div class="person-cabinet__img-wrapper">								
+                            <svg class="person-cabinet__img"  viewBox="0 0 14 14">
+                                <path id="Path" d="M4.63564 7.47774H3.36416C3.16314 7.47774 3 7.64068 3 7.8418V9.11334C3 9.31473 3.16314 9.47774 3.36416 9.47774H4.63564C4.83689 9.47774 5 9.31473 5 9.11334V7.8418C5 7.64068 4.83689 7.47774 4.63564 7.47774Z"/>
+                                <path id="Path_2" d="M8 7.8418C8 7.64068 7.83684 7.47774 7.63597 7.47774H6.3642C6.16316 7.47774 6 7.64068 6 7.8418V9.11334C6 9.31473 6.16316 9.47774 6.3642 9.47774H7.63597C7.83684 9.47774 8 9.31473 8 9.11334V7.8418Z" />
+                                <path id="Path_3" d="M11 7.8418C11 7.64068 10.8369 7.47774 10.6358 7.47774H9.36436C9.16311 7.47774 9 7.64068 9 7.8418V9.11334C9 9.31473 9.16311 9.47774 9.36436 9.47774H10.6358C10.8369 9.47774 11 9.31473 11 9.11334V7.8418Z"/>
+                                <path id="Path_4" d="M5 10.3643C5 10.1628 4.83689 10 4.63564 10H3.36416C3.16314 10 3 10.1628 3 10.3643V11.6357C3 11.837 3.16314 12 3.36416 12H4.63564C4.83689 12 5 11.837 5 11.6357V10.3643Z" />
+                                <path id="Path_5" d="M8 10.3643C8 10.1628 7.83684 10 7.63597 10H6.3642C6.16316 10 6 10.1628 6 10.3643V11.6357C6 11.837 6.16316 12 6.3642 12H7.63597C7.83684 12 8 11.837 8 11.6357V10.3643Z" />
+                                <path id="Path_6" d="M11 10.3643C11 10.1628 10.8369 10 10.636 10H9.36436C9.16311 10 9 10.1628 9 10.3643V11.6357C9 11.837 9.16311 12 9.36436 12H10.636C10.8369 12 11 11.837 11 11.6357V10.3643Z" />
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M12.7539 3.63854V2.00586C13.4379 2.0253 14 2.5589 14 3.21476V12.783C14 13.4501 13.4244 14 12.7167 14H1.28333C0.574512 14 0 13.4512 0 12.783V3.21476C0 2.5589 0.562106 2.0253 1.24617 2.00586V3.63854C1.24617 4.37649 1.88118 4.97117 2.66385 4.97117H3.55838C4.34102 4.97117 4.98446 4.37649 4.98446 3.63854V2H9.01554V3.63854C9.01554 4.37649 9.65901 4.97117 10.4418 4.97117H11.3361C12.1188 4.97117 12.7539 4.37649 12.7539 3.63854ZM11.7837 12.7102C12.0901 12.7102 12.3385 12.476 12.3385 12.1872L12.3384 7.24483C12.3384 6.95596 12.0901 6.72169 11.7836 6.72169H2.19191C1.88544 6.72169 1.6371 6.95596 1.6371 7.24483V12.1872C1.6371 12.476 1.88547 12.7102 2.19191 12.7102H11.7837Z" />
+                                <path id="Path_7" d="M2.59005 4H3.54276C3.83194 4 4.06641 3.77184 4.06641 3.49003V0.510154C4.06641 0.228312 3.83194 0 3.54276 0H2.59005C2.30084 0 2.06641 0.228312 2.06641 0.510154V3.49003C2.06641 3.77184 2.30084 4 2.59005 4Z" />
+                                <path id="Path_8" d="M10.3752 4H11.3281C11.6171 4 11.8516 3.77184 11.8516 3.49003V0.510154C11.8516 0.228312 11.6171 0 11.3281 0H10.3752C10.0861 0 9.85156 0.228312 9.85156 0.510154V3.49003C9.85156 3.77184 10.0861 4 10.3752 4Z" />
+                            </svg>
+                        </div>
+                        <a class="person-cabinet__option-link" href="/account-order.html">Замовлення</a>
+                    </div>
+                    <div class="person-cabinet__option person-cabinet__option_active user-address">
+                        <div class="person-cabinet__img-wrapper">
+                            <svg class="person-cabinet__img" width="10" height="14" viewBox="0 0 10 14">
+                                <path d="M0 5.15429C0 2.31222 2.24304 0 4.99979 0C7.75668 0 9.99972 2.31222 10 5.15429C10 5.89561 9.85295 6.60341 9.56273 7.25819C8.31223 10.0783 5.91547 13.0554 5.21078 13.9004C5.15796 13.9636 5.08096 14 4.99993 14C4.9189 14 4.8419 13.9636 4.78908 13.9004C4.08412 13.0552 1.68735 10.078 0.437266 7.25819C0.147192 6.60341 0 5.89561 0 5.15429ZM2.4026 5.15415C2.4026 6.63034 3.56777 7.83144 4.99979 7.83144C6.43196 7.83144 7.59712 6.63034 7.59698 5.15415C7.59698 3.67781 6.43182 2.47671 4.99979 2.47671C3.56777 2.47671 2.4026 3.67781 2.4026 5.15415Z"/>
+                            </svg>
+                        </div>
+                        <a class="person-cabinet__option-link" href="/account-address.html">Адрес</a>
+                    </div>
+                    <div class="person-cabinet__option user-settings">
+                        <div class="person-cabinet__img-wrapper">
+                            <svg class="person-cabinet__img" width="14" height="13" viewBox="0 0 14 13">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M11.7225 4.21299L12.076 5.00946C12.076 5.00946 14.0006 5.65771 14 5.75673V7.18361C14 7.27956 12.0786 7.98254 12.0786 7.98254L11.7258 8.77778C11.7258 8.77778 12.5928 10.5005 12.5169 10.5712L11.4288 11.5805C11.3555 11.6475 9.46454 10.8837 9.46454 10.8837L8.60725 11.2127C8.60725 11.2127 7.9069 13 7.80055 13H6.2643C6.1599 13 5.40377 11.2176 5.40377 11.2176L4.54713 10.8886C4.54713 10.8886 2.69054 11.6918 2.61661 11.6236L1.52846 10.613C1.45648 10.5454 2.27875 8.78701 2.27875 8.78701L1.92533 7.993C1.92533 7.993 0 7.34291 0 7.24327V5.81516C0 5.72044 1.92079 5.01869 1.92079 5.01869L2.27421 4.22345C2.27421 4.22345 1.40914 2.4995 1.48437 2.43L2.57122 1.42073C2.64385 1.35246 4.5387 2.11634 4.5387 2.11634L5.39339 1.78729C5.39339 1.78729 6.0931 0 6.2001 0H7.73635C7.8401 0 8.59623 1.7836 8.59623 1.7836L9.45222 2.11142C9.45222 2.11142 11.3082 1.30818 11.3834 1.37768L12.4722 2.38572C12.5448 2.45338 11.7225 4.21299 11.7225 4.21299ZM7.00032 8.58282C8.23762 8.58282 9.24471 7.64796 9.24471 6.49969C9.24471 5.35142 8.23827 4.41841 7.00032 4.4178C5.76432 4.4178 4.75594 5.35142 4.75594 6.49969C4.75594 7.64796 5.76432 8.58282 7.00032 8.58282Z"/>
+                            </svg>
+                        </div>
+                        <a class="person-cabinet__option-link" href="/account-settings.html">Налаштування</a>
+                    </div>
+                    <div class="person-cabinet__option user-product-replacement">
+                        <div class="person-cabinet__img-wrapper">
+                            <svg class="person-cabinet__img" width="12" height="13" viewBox="0 0 12 13">
+                                <path d="M12 6.68008C12 4.23724 10.3891 2.02659 7.89607 1.04823C7.57219 0.921145 7.19508 1.05386 7.05366 1.34465C6.91223 1.63541 7.06001 1.97411 7.38368 2.10116C9.41069 2.89662 10.7205 4.69392 10.7205 6.68008C10.7205 8.25354 9.89652 9.70945 8.54563 10.6418L8.98019 8.67989C9.04911 8.36868 8.82409 8.06617 8.47756 8.00427C8.13086 7.94241 7.79423 8.14446 7.72526 8.45566L7.01254 11.6732C6.97949 11.8227 7.01378 11.9778 7.10808 12.1046C7.20233 12.2313 7.34879 12.3191 7.51517 12.3489L11.098 12.9889C11.1401 12.9964 11.1821 13 11.2235 13C11.5225 13 11.7897 12.8108 11.8503 12.5374C11.9192 12.2262 11.6942 11.9238 11.3476 11.8618L9.38545 11.5114C11.0113 10.3632 12 8.59198 12 6.68008Z"/>
+                                <path d="M3.52272 4.99566C3.56486 5.00317 3.60687 5.00681 3.64824 5.00681C3.94721 5.00681 4.2144 4.81763 4.27496 4.54423L4.98759 1.32667C5.05651 1.01546 4.83149 0.712989 4.48497 0.651093L0.902325 0.0111036C0.555802 -0.0506394 0.219003 0.151328 0.150039 0.462494C0.0811184 0.773736 0.306134 1.07617 0.652658 1.1381L2.61635 1.48884C0.990608 2.63821 0 4.41224 0 6.31999C0 8.7629 1.6109 10.9735 4.1039 11.9518C4.18732 11.9845 4.2742 12 4.35971 12C4.60622 12 4.84122 11.8712 4.94626 11.6554C5.08768 11.3646 4.93995 11.0259 4.6162 10.8989C2.58926 10.1034 1.27951 8.30615 1.27951 6.31999C1.27951 4.75041 2.10439 3.2921 3.45453 2.35883L3.0201 4.32009C2.95118 4.63129 3.1762 4.93373 3.52272 4.99566Z"/>
+                            </svg>
+                        </div>
+                        <p class="person-cabinet__option-title"><a class="person-cabinet__option-link" href="/account-replacement.html">Заміна товару</a></p>
+                    </div>
+                    <div class="person-cabinet__option user-logout">
+                        <div class="person-cabinet__img-wrapper">
+                            <svg class="person-cabinet__img" width="14" height="14" viewBox="0 0 14 14">
+                                <path  d="M8.43753 7.5833C8.12648 7.5833 7.87506 7.84467 7.87506 8.1666V10.5C7.87506 10.8214 7.62303 11.0833 7.31249 11.0833H5.62499V2.3333C5.62499 1.83513 5.31898 1.39005 4.85889 1.22438L4.69235 1.1666H7.31249C7.62303 1.1666 7.87506 1.4285 7.87506 1.75V3.5C7.87506 3.82193 8.12648 4.0833 8.43753 4.0833C8.74858 4.0833 9 3.82193 9 3.5V1.75C9 0.785172 8.24287 0 7.31249 0H1.26563C1.24421 0 1.22628 0.00993349 1.20548 0.0128174C1.17839 0.0104675 1.15254 0 1.12504 0C0.504583 0 0 0.523163 0 1.1666V11.6666C0 12.1648 0.306005 12.6098 0.766093 12.7755L4.1513 13.9457C4.26604 13.9825 4.38016 14 4.50005 14C5.12051 14 5.62499 13.4767 5.62499 12.8333V12.25H7.31249C8.24287 12.25 9 11.4648 9 10.5V8.1666C9 7.84467 8.74858 7.5833 8.43753 7.5833Z" />
+                                <path  d="M13.8401 5.57583L11.6583 3.17596C11.5023 3.00436 11.2677 2.95272 11.0638 3.04566C10.8604 3.13871 10.7272 3.35766 10.7272 3.60012V5.40006H8.54551C8.24439 5.40006 8 5.66877 8 6C8 6.33122 8.24439 6.59994 8.54551 6.59994H10.7272V8.39987C10.7272 8.64233 10.8604 8.86128 11.0638 8.95433C11.2677 9.04727 11.5023 8.99564 11.6583 8.82415L13.8401 6.42416C14.0533 6.18962 14.0533 5.81038 13.8401 5.57583Z"/>
+                            </svg>
+                        </div>
+                        <a class="person-cabinet__option-link" href="/account-logout.html">Вийти</a>
+                    </div>
+                </nav>
+            </section>
+            <section class="user-cabinet-main-block address-main-block">
+                <h3 class="page-section-header account-main-block-header">Адрес</h3>
+                <div class="user-address-wrapper">                    
+                    <article class="user-address-unit">
+                        <p class="user-address__street">проспект Пушкіна,
+                            <span class="user-address__building-number">11</span>
+                            <span class="user-address__appartment"> кв. <span class="user-address__appartment-number">34</span></span>
+                       </p>
+                       <p class="user-address__city">Дніпро</p>
+                       <div class="address-control-block">
+                           <p class="user__edit-address-wrapper"><a href="#" class="control-address__link edit-address__link">Редагувати</a></p>
+                           <p class="user__remove-address-wrapper"><a href="#" class="control-address__link remove-address__link">Видалити</a></p>
+                       </div>
+                    </article>
+                    <article class="user-address-unit">
+                        <p class="user-address__street">проспект Пушкіна,
+                            <span class="user-address__building-number">11</span>
+                            <span class="user-address__appartment"> кв. <span class="user-address__appartment-number">34</span></span>
+                       </p>
+                       <p class="user-address__city">Дніпро</p>
+                       <div class="address-control-block">
+                           <p class="user__edit-address-wrapper"><a href="#" class="control-address__link edit-address__link">Редагувати</a></p>
+                           <p class="user__remove-address-wrapper"><a href="#" class="control-address__link remove-address__link">Видалити</a></p>
+                       </div>
+                    </article>
+                    <article class="user-address-unit">
+                        <p class="user-address__street">проспект Пушкіна,
+                            <span class="user-address__building-number">11</span>
+                            <span class="user-address__appartment"> кв. <span class="user-address__appartment-number">34</span></span>
+                       </p>
+                       <p class="user-address__city">Дніпро</p>
+                       <div class="address-control-block">
+                           <p class="user__edit-address-wrapper"><a href="#" class="control-address__link edit-address__link">Редагувати</a></p>
+                           <p class="user__remove-address-wrapper"><a href="#" class="control-address__link remove-address__link">Видалити</a></p>
+                       </div>
+                    </article>
+                </div>
+                <div class="user-add-address-wrapper">
+                    <p class="account-add-address-btn">добавить</p>
+                    <div class="add-address-popup-container">
+                        <div class="add-address-popup-window">
+                            <h3 class="page-section-header">Добавить новой адрес</h3>
+                            <form class="add-address-popup-form" action="">
+                                <fieldset class="add-address-sub-block">
+                                    <label for=""><input type="text" name="address-city" placeholder="Місто"></label>
+                                    <label for=""><input type="text" name="address-street" placeholder="Введіть Вашу адресу"></label>
+                                    <div class="address-inputs-wrapper">
+                                        <p class="address-form-input-wrapper">
+                                            <label for=""><input type="text" name="address-building-number" placeholder="№ будинку"></label>
+                                        </p>
+                                        <p class="address-form-input-wrapper">
+                                            <label for=""><input type="text" name="address-appartment-number" placeholder="Квартира"></label>
+                                        </p>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="add-address-sub-block">
+                                    <div class="address-inputs-wrapper">
+                                       <p class="address-form-checkbox-wrapper">
+                                           <input type="checkbox" id="address-first-option" name="address-additional-option" value="lift">
+                                           <label for="address-first-option">Є ліфт?</label>
+                                        </p>
+                                       <p class="address-form-checkbox-wrapper">
+                                           <input type="checkbox" id="address-second-option" name="address-additional-option" value="address-second-option">
+                                           <label for="address-second-option">Окрема будівля</label>
+                                        </p>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="add-address-sub-block">
+                                    <textarea name="address-comment" id="address-comment" cols="30" rows="10"></textarea>
+                                </fieldset>
+                                <button class="add-addres-send-btn submit-btn" type="submit">Продовжити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer class="main-footer">
+	<div class="page-up-btn">
+		<img src="img/up-btn.png" alt="">
+	</div>
+	<div class="footer-main-block ">
+		<div class="center-main-container">
+			<div class="footer-info-nav">
+				<div class="footer-contacts-nav-block">
+					<div class="footer-contacts-wrapper">
+						<figure class="footer-logo">
+							<img src="img/logo.png" alt="">
+						</figure>
+						<p class="footer-general-info">Загальна інформація</p>
+						<div class="footer-contacts-block">
+							<div class="footer-contacts-block__pic"><img src="img/footer-phone.png" alt=""></div>
+							<span class="footer-contacts-block__number">+38 (096) 888 71 33</span>
+						</div>
+						<div class="footer-worktime-block">
+							<div class="footer-worktime-block__pic"><img src="img/footer-clock.png" alt=""></div>
+							<div class="footer-worktime-block__text">Працюємо з 9:00 до 21:00</div>
+						</div>
+					</div>
+					<nav class="footer-nav-block">
+						<ul class="footer-nav-wrapper">
+							<li class="footer-nav__item"><a href="/">Головна</a></li>
+							<li class="footer-nav__item"><a href="/about-us.html">Про нас</a></li>
+							<li class="footer-nav__item"><a href="/reviews.html">Відгуки</a></li>
+							<li class="footer-nav__item"><a href="/blog-news.html">Блог/Новини</a></li>
+							<li class="footer-nav__item"><a href="/pay-delivery.html">Оплата і доставка</a></li>
+							<li class="footer-nav__item"><a href="our-shops.html">Наші магазини</a></li>
+							<li class="footer-nav__item"><a href="/contacts.html">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-delivery-block">
+					<p class="footer-delivery-block__header">Безкоштовна доставка</p>
+					<p class="footer-delivery-block__text">при замовлені товару на суму 150грн м. Вінниця / 300грн
+						Україна</p>
+				</div>
+			</div>
+			<div class="footer-social-media-block">
+				<div class="telegram-block">
+					<label for="telegram-mail" class="telegram-block__title">Підписатися</label>
+					<form class="telegram-form" action="" method="">
+						<input type="email" id="telegram-mail" placeholder=" Вкажіть свій e-mail">
+						<div class="telegram-btn">
+							<img src="img/social/telegram.png" alt="">
+						</div>
+					</form>
+				</div>
+				<div class="social-nets">
+					<p class="social-nets__title">Ми у соц. мережах</p>
+					<div class="social-nets__icons">
+						<div class="social-nets__instagram-ico social-nets__icon_hover">
+							<svg class="instagram-ico-svg " width="12px" height="12px" viewBox="0 0 12 12"
+								fill="#424242" version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path
+									d="M8.68836285,0 L3.31149519,0 C1.48553785,0 0,1.48560883 0,3.31156617 L0,8.68843383 C0,10.5144621 1.48553785,12 3.31149519,12 L8.68836285,12 C10.5144621,12 12,10.5143912 12,8.68843383 L12,3.31156617 C12.000071,1.48560883 10.5144621,0 8.68836285,0 Z M10.9353728,8.68843383 C10.9353728,9.92738759 9.92738759,10.9353018 8.68843383,10.9353018 L3.31149519,10.9353018 C2.07261241,10.9353728 1.06469816,9.92738759 1.06469816,8.68843383 L1.06469816,3.31156617 C1.06469816,2.07268339 2.07261241,1.06469816 3.31149519,1.06469816 L8.68836285,1.06469816 C9.92731661,1.06469816 10.9353018,2.07268339 10.9353018,3.31156617 L10.9353018,8.68843383 L10.9353728,8.68843383 Z"
+									id="Shape"></path>
+								<path
+									d="M6,3 C4.34577508,3 3,4.34580598 3,6.00006887 C3,7.65426289 4.34577508,9 6,9 C7.65422492,9 9,7.65426289 9,6.00006887 C9,4.34580598 7.65422492,3 6,3 Z M6,7.96692071 C4.91543282,7.96692071 4.03298671,7.08459208 4.03298671,6 C4.03298671,4.91533906 4.91536396,4.03294155 6,4.03294155 C7.08463604,4.03294155 7.96701329,4.91533906 7.96701329,6 C7.96701329,7.08459208 7.08456718,7.96692071 6,7.96692071 Z"
+									id="Shape"></path>
+								<path
+									d="M9,2 C8.73727273,2 8.47918182,2.10636364 8.29363636,2.29272727 C8.10718182,2.47818182 8,2.73636364 8,3 C8,3.26281818 8.10727273,3.52090909 8.29363636,3.70727273 C8.47909091,3.89272727 8.73727273,4 9,4 C9.26363636,4 9.52090909,3.89272727 9.70727273,3.70727273 C9.89363636,3.52090909 10,3.26272727 10,3 C10,2.73636364 9.89363636,2.47818182 9.70727273,2.29272727 C9.52181818,2.10636364 9.26363636,2 9,2 Z"
+									id="Path"></path>
+							</svg>
+						</div>
+						<div class="social-nets__facebook-ico social-nets__icon_hover">
+							<svg class="facebook-ico-svg" width="6px" height="12px" viewBox="0 0 6 12" fill="#424242"
+								version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path
+									d="M5.77405761,0.00249680097 L4.33493044,0 C2.71812042,0 1.67326676,1.15913985 1.67326676,2.95321619 L1.67326676,4.3148466 L0.226288749,4.3148466 C0.10125267,4.3148466 0,4.42445617 0,4.55965794 L0,6.53250523 C0,6.667707 0.101368123,6.77719172 0.226288749,6.77719172 L1.67326676,6.77719172 L1.67326676,11.7553135 C1.67326676,11.8905153 1.77451943,12 1.8995555,12 L3.78745021,12 C3.91248629,12 4.01373896,11.8903904 4.01373896,11.7553135 L4.01373896,6.77719172 L5.70559372,6.77719172 C5.8306298,6.77719172 5.93188247,6.667707 5.93188247,6.53250523 L5.93257519,4.55965794 C5.93257519,4.49474111 5.90867633,4.43257077 5.86630491,4.38662963 C5.8239335,4.34068849 5.76620678,4.3148466 5.70617099,4.3148466 L4.01373896,4.3148466 L4.01373896,3.16057551 C4.01373896,2.60578634 4.13600416,2.32414719 4.80436414,2.32414719 L5.7738267,2.32377267 C5.89874733,2.32377267 6,2.2141631 6,2.07908617 L6,0.247183296 C6,0.112231204 5.89886278,0.00274648107 5.77405761,0.00249680097 Z"
+									id="Path"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright-block center-main-container">
+		<div class="copyright__owner">© 2019 — Екоферма</div>
+		<div class="copyright__performer">
+			<p>Розробка сайтів</p>
+			<div><img src="img/oscorp-logo.png" alt=""></div>
+		</div>
+	</div>
+</footer>
+    <script src="js/libs.min.js"></script>    
+    <script src="js/common.js"></script>
+</body>
+
+</html>

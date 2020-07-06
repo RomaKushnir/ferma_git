@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./chunks/head.html', {"title": "Контакти"})
+
+<body>
+    @@include('./chunks/header.html')
+    <main class="center-main-container">
+        <div class="breadcrumbs-block">
+            <ul class="breadcrumbs-wrapper">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__page-location-link" href="/">Головна</a>
+                    <img class="breadcrumbs__arrow-divider" src="../img/breadcrumbs-divider.png" alt="">
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__current">Контакти</span>
+                </li>
+            </ul>
+        </div>
+        <h3 class="page-section-header">Контакти</h3>
+        <section class="page-thin-content-block">
+            <section class="contacts-note-block">
+                <p class="contacts__header">Для нас важлива ваша думка!</p>
+                <p class="contacts__content">Ми завжди готові відповісти на будь-яке Ваше запитання, а також
+                    почути
+                    Ваші відгуки та пропозиції по
+                    роботі нашого магазину. Для зв'язку скористайтеся, будь ласка, телефоном нашої довідкової служби
+                    8-800-200-95-55 або формою звернення нижче.</p>
+            </section>
+            <section class="contacts-form-block">
+                <form class="contacts-form" action="" method="">
+                    <fieldset class="personal-data-block">
+                        <legend class="form__block-title">Особисті дані</legend>
+                        <ul class="personal-data-wrapper">
+                            <li class="personal-data-input-wrapper"><label for=""></label>
+                                <div class="required-input-wrapper">
+                                    <input class="personal-data-input" type="text" id="name" name="name"
+                                    placeholder="Як вас звати" required>
+                                </div>
+                            </li>
+                            <li class="personal-data-input-wrapper"><label for=""></label>
+                                <div class="required-input-wrapper">
+                                    <input class="personal-data-input" type="text" id="city" name="city" placeholder="Місто"
+                                    required>
+                                </div>
+                            </li>
+                            <li class="personal-data-input-wrapper"><label for=""></label>
+                                <div class="required-input-wrapper">
+                                    <input class="personal-data-input" type="email" id="email" name="email" placeholder="Email"
+                                    required>
+                                </div>
+                            </li>
+                            <li class="personal-data-input-wrapper"><label for=""></label>
+                                <div class="required-input-wrapper">
+                                    <input class="personal-data-input" type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон" required>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="textarea-wrapper">
+                        <legend class="form__block-title">Звернення</legend>
+                        <div class="required-input-wrapper">
+                            <textarea class="personal-data-textarea" placeholder="Ваше звернення" required></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="agree-submit-wrapper">
+                        <div class="personal-data-checkbox-wrapper">
+                            <input class="personal-data-checkbox" type="checkbox" id="appeal-agreement"
+                                name="appeal-agreement" value="agreement">
+                            <label class="appeal-agreement-label" for="appeal-agreement">Згода на 
+                                <a href="#" class="appeal__rules-acceptance">обробку моїх персональних
+                                    даних</a>
+                            </label>
+                        </div>
+                        <div class="personal-data-submit-wrapper"><input class="personal-data-submit" type="submit"
+                                value="Відправити"></div>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+    </main>
+    @@include('./chunks/footer.html')
+    <script src="js/libs.min.js"></script>    
+    <script src="js/common.js"></script>
+</body>
+
+</html>
